@@ -105,7 +105,7 @@ body{
     position: relative;
 }
 
-.container form custom-input input{
+.container form .custom-input input{
     color: #1d1d1d;
     font-size: 16px;
     font-weight: 500;
@@ -132,7 +132,7 @@ border-color:#5222fd;
     transition: all 0.3s ease;
 }
 
-.container form c.ustom-input input:focus + i{
+.container form .custom-input input:focus + i{
     color: #5222fd;
 }
 
