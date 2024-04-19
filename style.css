@@ -1,41 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-.topnav {
-    list-style-type: none;
-    position: fixed;
-    top: 0; 
-    right: 0;/* Align to top right */
-    padding: 5px;
-    background-color: white;
-    overflow: hidden;
-    text-align: center;
-    font-size: 16.5px;
-    /* margin-top: 35px; */
-}
-.topnav a{
-    color: black;
-    text-decoration: underline;
-}
-
-.topnav a:hover {
-    color: red;
-}
-
-.page {
-    display: none;
-}
-
-.page.active {
-    display: block;
-}
-
-li {
-    display: inline;
-}
-
 
 *{
-   
-    padding: auto;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;   
@@ -49,8 +15,8 @@ body{
 
 .logo{
     position: absolute;
-    top: 0;
-    left: 0px;
+    top: 22px;
+    left: 22px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -62,7 +28,6 @@ body{
 }
 
 .logo a{
-    top:0;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
@@ -96,8 +61,8 @@ body{
     gap: 8px;
     font-size: 1rem;
     font-weight: 700;
-    color: #080910;
-    border: 1px solid #1d1d1d;
+    color: #323760;
+    border: 1px solid #6667b0;
     background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -108,8 +73,8 @@ body{
 }
 
 .container .social-login button:hover{
-    color: black;
-    border-color: red;
+    color: #6b43ff;
+    border-color: #6b43ff;
 }
 
 .container .divider{
@@ -141,7 +106,7 @@ body{
 }
 
 .container form .custom-input input{
-    color: black;
+    color: #1d1d1d;
     font-size: 16px;
     font-weight: 500;
     width: 100%;
@@ -157,7 +122,7 @@ body{
 }
 
 .container form .custom-input input:focus{
-border-color: red;
+border-color:#5222fd;
 }
 .container form .custom-input i{
     position: absolute;
@@ -168,14 +133,14 @@ border-color: red;
 }
 
 .container form .custom-input input:focus + i{
-    color: red;
+    color: #5222fd;
 }
 
 .container form .login{
     width: 100%;
     margin-top: 30px;
-    background: black;
-    color: red;
+    background: #6b43ff;
+    color: #fff;
     line-height: 50px;
     font-size: 18px;
     letter-spacing: 0.025em;
@@ -187,7 +152,7 @@ border-color: red;
 }
 
 .container form .login:hover{
-    background: red;
+    background: #5222fd;
 }
 
 .container .links{
@@ -197,12 +162,12 @@ border-color: red;
 }
 
 .container .links a{
-    color: black;
+    color: #6b43ff;
     font-weight: 600;
     font-size: 1rem;
     text-decoration: none;
     text-underline-offset: 6px;
-    text-decoration-color: black;
+    text-decoration-color: #6b43ff;
 }
 
 .container .links a{
