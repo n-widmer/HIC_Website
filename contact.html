@@ -9,6 +9,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 input[type=text], select, textarea {
@@ -42,6 +44,7 @@ input[type=submit]:hover {
   width: 50%;
   margin: auto;
   margin-top: 50px;
+  flex-grow: 1;
 }
 
 .container h1 {
@@ -51,10 +54,9 @@ input[type=submit]:hover {
 footer {
   display: flex;
   justify-content: space-evenly;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
-  font-size: 24px;
   padding: 24px;
 }
 
@@ -78,7 +80,7 @@ footer img {
 
     <label for="country">Country</label>
     <select id="country" name="country">
-      <option value="usa">United States of America</option>
+      <option value="usa">United States</option>
       <option value="australia">Australia</option>
       <option value="canada">Canada</option>
     </select>
