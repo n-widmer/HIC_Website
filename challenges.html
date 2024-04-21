@@ -1,52 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <!-- Add Background photo -->
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css"> <!-- I think this is causing headers to act weird-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>We Love Gainz | Group4</title>
-
     </head>
 
-    <body> 
-        <div class="logo"> <!-- Begin logo button --> 
+    <!-- Add background photo -->
+
+    <style>
+        .CGheader{
+            padding: 10px;
+            height: 65vh !important;
+            align-items:safe;
+            justify-content:center !important;
+            color:rgb(255, 71, 71);
+            background-color: black; /*Find diff way to do this*/
+            
+            
+        }
+    </style>
+
+    <body>
+        <div class="logo"> <!-- Begin logo button -->
             <img src="dumbbell.png">
             <a href="#">WeLoveGainz</a>
         </div> <!-- End logo button -->
 
+
         <!-- Add Nick's navigation bar (see his code) -->
 
-        <!-- Text box saying "Your Challenges and Goals" -->
-        <!-- You should change this to have a class name -->
-        <style>
-            h1 {text-align: center; color:rgb(255, 71, 71);
-                background-color: black;
-                margin-bottom: 400px;
-                width: 420px; 
-                height: 45px;
-                } 
-        </style>
-
-        <h1>Your Challenges and Goals</h1> 
-
+        <!-- Container one code -->
+        <!-- Has today's workout -->
         <div class="container">
-            <h2>Today's goals</h2>
+            <h1>Today's Goals</h1>
             <div class="divider">
                 <div class="line"></div>
                 <p>Keep it up!</p>
                 <div class="line"></div>
             </div>
+            <!-- Consider figuring out a way to code this text to change -->
+            <h3>Core Workout</h3>
                 <form>
-                    
-                     <button class="WorkoutNav">Get Started:</button>
-                     <!-- You can format this like the login button-->
+                     <button class="login">Get Started!</button>
                      
+                     <!-- Maybe keep these but change titles and links-->
+                     <!--<div class="links"> 
+                        <a href="#">Reset Password</a>
+                        <a href="#">Don't Have an account?</a>
+                     </div>-->
                 </form>
             </div>
+        </div>
 
-    </body> 
+        <!-- Title saying "Your Challenges and Goals" -->
+        <div class="CGheader">
+            <h1>Your Challenges and Goals</h1>
+        </div>
+
+        <!-- Container two code -->
+        <!-- Has the weekly workouts -->
+        <div class="container">
+            <h1>Today's Goals</h1>
+            <div class="divider">
+                <div class="line"></div>
+                <p>Keep it up!</p>
+                <div class="line"></div>
+            </div>
+            <!-- Consider figuring out a way to code this text to change -->
+            <h3>Core Workout</h3>
+                <form>
+                     <button class="login">Get Started!</button>
+                     
+                     <!-- Maybe keep these but change titles and links-->
+                     <!--<div class="links"> 
+                        <a href="#">Reset Password</a>
+                        <a href="#">Don't Have an account?</a>
+                     </div>-->
+                </form>
+            </div>
+        </div>
+
+
+    </body>
+
+
+
+     
 </html>

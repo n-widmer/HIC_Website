@@ -6,12 +6,13 @@
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;   
 }
-body{
+body{  
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; 
+    justify-content: center; 
 }
+
 
 .logo{
     position: absolute;
