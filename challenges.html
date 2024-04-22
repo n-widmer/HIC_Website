@@ -18,10 +18,39 @@
             align-items:safe;
             justify-content:center !important;
             color:rgb(255, 71, 71);
-            background-color: black; /*Find diff way to do this*/
-            
-            
+            text-shadow:
+                3px 3px 0 #000,
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px  1px 0 #000,
+                1px  1px 0 #000;
         }
+
+        .container form .login{
+            background:#000;
+        }
+
+        .container form .login:hover{
+            background:rgb(255,71,71);
+        }
+
+        .weekday{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .todayWorkout{
+            background:#000;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .todayWorkout:hover{
+            background:rgb(255,71,71);
+            color:#000;
+        }
+
     </style>
 
     <body>
@@ -45,7 +74,7 @@
             <!-- Consider figuring out a way to code this text to change -->
             <h3>Core Workout</h3>
                 <form>
-                     <button class="login">Get Started!</button>
+                     <button class="login">"Get Started!"</button>
                      
                      <!-- Maybe keep these but change titles and links-->
                      <!--<div class="links"> 
@@ -58,29 +87,62 @@
 
         <!-- Title saying "Your Challenges and Goals" -->
         <div class="CGheader">
-            <h1>Your Challenges and Goals</h1>
+            <h1>Your Challenges and Goals:</h1>
         </div>
 
         <!-- Container two code -->
         <!-- Has the weekly workouts -->
         <div class="container">
-            <h1>Today's Goals</h1>
+            <h1>This week:</h1>
             <div class="divider">
                 <div class="line"></div>
                 <p>Keep it up!</p>
                 <div class="line"></div>
             </div>
-            <!-- Consider figuring out a way to code this text to change -->
-            <h3>Core Workout</h3>
-                <form>
-                     <button class="login">Get Started!</button>
-                     
-                     <!-- Maybe keep these but change titles and links-->
-                     <!--<div class="links"> 
-                        <a href="#">Reset Password</a>
-                        <a href="#">Don't Have an account?</a>
-                     </div>-->
-                </form>
+
+            <!-- List of weekly workouts -->
+            <!-- Could be coded to do stuff -->
+            <div>
+                <div class="weekday">
+                    <h4>Monday: Arm workout
+                        <button type="button"> Completed! </button>
+                    </h4>
+                </div>
+                <div class="weekday">
+                    <h4>Tuesday: Light leg workout
+                        <button type="button"> Incomplete! </button>
+                    </h4>
+                </div>
+                
+                
+                <!-- Should probably code this one to actually do something -->
+                <div class="weekday">
+                    <h4>Wednesday: Core workout
+                            <button class="todayWorkout"> Get started! </button>
+                    </h4>
+                </div>
+                
+                <div class="weekday">
+                <h4>Thursday: Core workout
+                    <button type="button"> Upcoming </button>
+                </h4>
+                </div>
+                <div class="weekday">
+                <h4>Friday: Weight lifting
+                    <button type="button"> Upcoming </button>
+                </h4>
+                </div>
+                <div class="weekday">
+                <h4>Saturday: Rest day
+                    <button type="button"> Upcoming </button>
+                </h4>
+                </div>
+                <div class="weekday">
+                <h4>Sunday: Leg workout
+                    <button type="button"> Upcoming </button>
+                </h4>
+                </div>
+            </div>
             </div>
         </div>
 
