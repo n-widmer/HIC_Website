@@ -2,6 +2,9 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+
+
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 body {
@@ -65,9 +68,42 @@ footer img {
   height: 75px;
 }
 
+.topnav {
+    list-style-type: none;
+    position: fixed;
+    top: 0; 
+    right: 0;/* Align to top right */
+    padding: 5px;
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+    font-size: 16.5px;
+    display: inline-block;
+    /* margin-top: 35px; */
+}
+.topnav a{
+    color: black;
+    text-decoration: underline;
+}
+
+.topnav a:hover {
+    color: red;
+}
+
 </style>
 </head>
 <body>
+  <ul class="topnav">
+    <li><a class="active" href="#">Home</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="registration.html">Register</a></li>
+    <li><a href="#Library">Library</a></li>
+    <li><a href="#Nutrition">Nutrition</a></li>
+    <li><a href="#Progress">Progress</a></li>
+    <li><a href="#Challenges">Challenges</a></li>
+    <li><a href="#Community">Community</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
 
 <div class="container">
     <h1>Contact Us</h1>
