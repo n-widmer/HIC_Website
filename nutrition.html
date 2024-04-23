@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Calculator</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        .container {
+            float: left;
+            max-width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 100px;
+            min-width: 1000px;
+            margin-left: 100px;
+        }
+        .form-container {
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            font-weight: bold;
+        }
+        .form-container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #ef5b5b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .result {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .result h3 {
+            margin-top: 0;
+        }
+        .sideImage {
+            float: right;
+            max-width: 50%;
+            margin: auto;
+            padding: 20px;
+            margin-top: 200px;
+            margin-right: 100px;
+            width: 550px;
+            height: auto;
+            padding: 2%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Nutrition Calculator</h2>
+            <form id="nutritionForm">
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" name="gender" placeholder="Enter gender"><br>
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" placeholder="Enter age"><br>
+                <label for="weight">Weight (lbs):</label>
+                <input type="text" id="weight" name="weight" placeholder="Enter weight"><br>
+                <input type="submit" value="Calculate">
+            </form>
+        </div>
+        <div class="result" id="maintenance">
+            <h3>Maintenance Calories</h3>
+            <p>Your maintenance calorie intake is:</p>
+            <p id="maintenanceResult"></p>
+        </div>
+        <div class="result" id="bulking">
+            <h3>Bulking Calories</h3>
+            <p>Your bulking calorie intake is:</p>
+            <p id="bulkingResult"></p>
+        </div>
+        <div class="result" id="deficit">
+            <h3>Deficit Calories</h3>
+            <p>Your deficit calorie intake is:</p>
+            <p id="deficitResult"></p>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="eatingPlate.jpg" alt="Image" class="sideImage">
+      </div>
+
+
+    <script>
+        document.getElementById('nutritionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var gender = document.getElementById('gender').value;
+            var age = parseFloat(document.getElementById('age').value);
+            var weight = parseFloat(document.getElementById('weight').value);
+
+            if (isNaN(age) || isNaN(weight)) {
+                alert('Please enter valid age and weight.');
+                return;
+            }
+
+            var maintenanceCalories = calculateMaintenanceCalories(gender, age, weight);
+            var bulkingCalories = calculateBulkingCalories(maintenanceCalories);
+            var deficitCalories = calculateDeficitCalories(maintenanceCalories);
+
+            document.getElementById('maintenanceResult').innerText = maintenanceCalories.toFixed(2) + " calories";
+            document.getElementById('bulkingResult').innerText = bulkingCalories.toFixed(2) + " calories";
+            document.getElementById('deficitResult').innerText = deficitCalories.toFixed(2) + " calories";
+        });
+
+        function calculateMaintenanceCalories(gender, age, weight) {
+            // Placeholder function to calculate maintenance calories
+            return (gender === "male" ? 10 : 9) * weight + (6.25 * 180) - (5 * age) + 5;
+        }
+
+        function calculateBulkingCalories(maintenanceCalories) {
+            // Placeholder function to calculate bulking calories (increase by 10-20%)
+            return maintenanceCalories * 1.1;
+        }
+
+        function calculateDeficitCalories(maintenanceCalories) {
+            // Placeholder function to calculate deficit calories (reduce by 10-20%)
+            return maintenanceCalories * 0.9;
+        }
+    </script>
+</body>
+</html>
