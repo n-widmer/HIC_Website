@@ -8,9 +8,23 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css"> <!-- I think this is causing headers to act weird-->
+        <link rel="stylesheet" href="style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <title>MyForum</title>
+
+
+        <ul class="topnav">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="#Library">Library</a></li>
+            <li><a href="#Nutrition">Nutrition</a></li>
+            <li><a href="#Progress">Progress</a></li>
+            <li><a class="active" href="challenges.html">Challenges</a></li>
+            <li><a class="active" href="forumPage.html">Forum</a></li>
+            <li><a href="#Community">Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <title>Forum | We Love Gainz</title>
         <!-- Add background photo (maybe. The forum might look better w/out it) -->
     </head>
 
@@ -20,7 +34,7 @@
             height: auto;
             display: flex;
             align-items:normal; 
-            justify-content: flex-start; 
+            justify-content: flex-start;
         }
 
         /* A lot of this can be moved to style.css */
@@ -32,13 +46,15 @@
         
         /* Can mess with margin, width, and padding to move around page */
         .container{
-            margin: 20px;
-            width: 550px;
+            margin: auto;
+            width: 600px;
             padding: 40px 32px;
+            
         }
 
         .subforum {
             margin-top: 20px;
+            justify-self: center;
         }
 
         /* Again, want this to match website */
@@ -47,7 +63,12 @@
             color:#fff;
             padding:5px;
             border-radius:5px;
-            margin: 4px
+            margin: 3px;
+            align-self: center;
+        }
+
+        .subforum-description *{
+            margin-block: 0;
         }
 
         .subforum-row{
@@ -68,24 +89,46 @@
             align-items: center;
         }
 
-        /* Only need this for a text image icon in this class
-        (like the icons on Balsamiq)
-        .subforum-icon i{
-            font-size:45px;
-        }*/
-
-        
-
 
     </style>
 
     <body>
 
-        <!-- Likely need to move this down -->
+        <!-- Add Nick's navigation bar (see his code) 
+            It may also go in the header (see his code). -->
+
+        <!-- Likely need to add style to move this -->
         <div class="container">
             <div class="subforum">
                 <div class="subforum-title center">
-                    <h1>General Information</h1>
+                    <h1>Title</h1>
+                </div>
+                <div class="subforum-row" >
+                    <div class = "subforum-icon subforum-columns center">
+                        <!-- You can add some icon like the dumbbell here -->
+                        
+                    </div>
+                    <div class="subforum-description subforum-columns">
+                        <h1><a href="">Description Title:</a></h1> <!-- May want to remove these and make Title the link -->
+                        <p>Description of content goes here. It may be multiple lines.</p>
+                    </div>
+                    <div>
+                        <div class="subforum-info subforum-columns">
+                            <b><a href="">Last post</a></b> by <b><a href="">aUsername</a></b>
+                            <br>
+                            on<small> 22 April 2024</small>
+                        </div>
+                        <div class = "subforum-status subforum-columns center">
+                            <span>Statistics go here. Ex: 24 Posts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example forum 2 -->
+            <div class="subforum">
+                <div class="subforum-title center">
+                    <h1>Title</h1>
                 </div>
                 <div class="subforum-row">
                     <div class = "subforum-icon subforum-columns center">
@@ -93,17 +136,103 @@
                         
                     </div>
                     <div class="subforum-description subforum-columns">
-                        <h1><a href="">Description Title:</a></h1>
-                        <p>Description of content goes here. It may be multiple lines.</p>
+                        <h1><a href="">Description Title:</a></h1> <!-- May want to remove these and make Title the link -->
+                        <p>Description of content goes here. It may be multiple lines.
+                            In fact, it may be many, many, many lines stretching out into the 
+                            cosmos of the page, swallowing everything in its path.
+                        </p>
                     </div>
                     <div>
-                        <div class = "subforum-status subforum-columns center">
-                            <span>Statistics go here. Ex: 24 Posts | 15 Topics</span>
-                        </div>
                         <div class="subforum-info subforum-columns">
                             <b><a href="">Last post</a></b> by <b><a href="">aUsername</a></b>
                             <br>
                             on<small> 22 April 2024</small>
+                        </div>
+                        <div class = "subforum-status subforum-columns center">
+                            <span>Statistics go here. Ex: 24 Posts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example forum 3 -->
+            <div class="subforum">
+                <div class="subforum-title center">
+                    <h1>Page layout tips</h1>
+                </div>
+                <div class="subforum-row">
+                    <div class = "subforum-icon subforum-columns center">
+                        <!-- You can add some icon like the dumbbell here -->
+                        
+                    </div>
+                    <div class="subforum-description subforum-columns">
+                        <h1><a href="">Description Title:</a></h1> <!-- May want to remove these and make Title the link -->
+                        <p>You need to figure out how to center this container on the page
+                            and move it downwards a tad.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="subforum-info subforum-columns">
+                            <b><a href="">Last post</a></b> by <b><a href="">aUsername</a></b>
+                            <br>
+                            on<small> 22 April 2024</small>
+                        </div>
+                        <div class = "subforum-status subforum-columns center">
+                            <span>Statistics go here. Ex: 24 Posts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example forum 4 -->
+            <div class="subforum">
+                <div class="subforum-title center">
+                    <h1>Title</h1>
+                </div>
+                <div class="subforum-row">
+                    <div class = "subforum-icon subforum-columns center">
+                        <!-- You can add some icon like the dumbbell here -->
+                        
+                    </div>
+                    <div class="subforum-description subforum-columns">
+                        <h1><a href="">Description Title:</a></h1> <!-- May want to remove these and make Title the link -->
+                        <p>Description of content goes here. It may be multiple lines.</p>
+                    </div>
+                    <div>
+                        <div class="subforum-info subforum-columns">
+                            <b><a href="">Last post</a></b> by <b><a href="">aUsername</a></b>
+                            <br>
+                            on<small> 22 April 2024</small>
+                        </div>
+                        <div class = "subforum-status subforum-columns center">
+                            <span>Statistics go here. Ex: 24 Posts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example forum 5 -->
+            <div class="subforum">
+                <div class="subforum-title center">
+                    <h1>Title</h1>
+                </div>
+                <div class="subforum-row">
+                    <div class = "subforum-icon subforum-columns center">
+                        <!-- You can add some icon like the dumbbell here -->
+                        
+                    </div>
+                    <div class="subforum-description subforum-columns">
+                        <h1><a href="">Description Title:</a></h1> <!-- May want to remove these and make Title the link -->
+                        <p>Description of content goes here. It may be multiple lines.</p>
+                    </div>
+                    <div>
+                        <div class="subforum-info subforum-columns">
+                            <b><a href="">Last post</a></b> by <b><a href="">aUsername</a></b>
+                            <br>
+                            on<small> 22 April 2024</small>
+                        </div>
+                        <div class = "subforum-status subforum-columns center">
+                            <span>Statistics go here. Ex: 24 Posts</span>
                         </div>
                     </div>
                 </div>
@@ -115,9 +244,6 @@
             <img src="dumbbell.png">
             <a href="#">WeLoveGainz</a>
         </div> <!-- End logo button -->
-
-
-        <!-- Add Nick's navigation bar (see his code) -->
 
         <!-- Javascript file -->
         <script scr="forum.js"></script>
