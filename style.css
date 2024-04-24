@@ -109,7 +109,7 @@ body{
 
 .container .social-login button:hover{
     color: black;
-    border-color: red;
+    border-color: crimson;
 }
 
 .container .divider{
@@ -157,7 +157,7 @@ body{
 }
 
 .container form .custom-input input:focus{
-border-color: red;
+border-color: crimson;
 }
 .container form .custom-input i{
     position: absolute;
@@ -168,14 +168,14 @@ border-color: red;
 }
 
 .container form .custom-input input:focus + i{
-    color: red;
+    color: crimson;
 }
 
 .container form .login{
     width: 100%;
     margin-top: 30px;
     background: black;
-    color: red;
+    color: crimson;
     line-height: 50px;
     font-size: 18px;
     letter-spacing: 0.025em;

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <!-- I added the style sheet include, this changes some things to the design, either fix or tell me to ig-->
+    <link rel="stylesheet" href="navbar.css" >
     <title>Nutrition Calculator</title>
     <style>
         body {
@@ -70,12 +73,29 @@
             
         }
     </style>
+    <div class="topnav">
+        <div class="logo">
+            <img src="dumbbell.png">
+            <a href="index.html">WeLoveGainz</a>
+        </div>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="workoutLibrary.html">Library</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="#Progress">Progress</a></li>
+            <li><a href="#Challenges">Challenges</a></li>
+            <li><a href="#Community">Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 </head>
 
 <body>
     <div class="container">
         <div class="form-container">
-            <h2>Nutrition Calculator</h2>
+            <h2 class="headone">Nutrition Calculator</h2>
             <form id="nutritionForm">
                 <label for="gender">Gender:</label>
                 <input type="text" id="gender" name="gender" placeholder="Enter gender"><br>

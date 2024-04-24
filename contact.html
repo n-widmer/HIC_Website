@@ -1,28 +1,9 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="navbar.css">
 <style>
-
-.topnav {
-    list-style-type: none;
-    position: fixed;
-    top: 0; 
-    right: 0;/* Align to top right */
-    padding: 5px;
-    background-color: white;
-    overflow: hidden;
-    text-align: center;
-    font-size: 16.5px;
-    /* margin-top: 35px; */
-}
-.topnav a{
-    color: black;
-    text-decoration: underline;
-}
-
-.topnav a:hover {
-    color: red;
-}
 
 .page {
     display: none;
@@ -39,6 +20,7 @@ li {
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 body {
+  margin-top: 50px;
   background-image: url('contactBackground.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -59,7 +41,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: crimson;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -68,7 +50,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: rgb(170, 15, 46);
 }
 
 .container {
@@ -100,22 +82,28 @@ footer img {
 }
 
 </style>
+<div class="topnav">
+  <div class="logo">
+      <img src="dumbbell.png">
+      <a href="index.html">WeLoveGainz</a>
+  </div>
+  <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="registration.html">Register</a></li>
+      <li><a href="workoutLibrary.html">Library</a></li>
+      <li><a href="nutrition.html">Nutrition</a></li>
+      <li><a href="#Progress">Progress</a></li>
+      <li><a href="#Challenges">Challenges</a></li>
+      <li><a href="#Community">Community</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
 </head>
-<body>
-  <ul class="topnav">
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="login.html">Login</a></li>
-    <li><a href="registration.html">Register</a></li>
-    <li><a href="#Library">Library</a></li>
-    <li><a href="#Nutrition">Nutrition</a></li>
-    <li><a href="#Progress">Progress</a></li>
-    <li><a href="#Challenges">Challenges</a></li>
-    <li><a href="#Community">Community</a></li>
-    <li><a href="contact.html">Contact</a></li>
-</ul>
+
 
 <div class="container">
-    <h1>Contact Us</h1>
+    <h1 class="headone">Contact Us</h1>
   <form action="/action_page.php">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">

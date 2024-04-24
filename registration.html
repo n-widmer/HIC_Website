@@ -4,63 +4,65 @@
   <head>
     <meta charset="UTF-8">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="navbar.css" >
   <style>
-.topnav {
-    list-style-type: none;
-    position: fixed;
-    top: 0; 
-    right: 0;/* Align to top right */
-    padding: 5px;
-    background-color: white;
-    overflow: hidden;
-    text-align: center;
-    font-size: 16.5px;
-    /* margin-top: 35px; */
-}
-.topnav a{
-    color: black;
-    text-decoration: underline;
-}
 
-.topnav a:hover {
-    color: red;
-}
+  .page {
+      display: none;
+  }
 
-.page {
-    display: none;
-}
+  .page.active {
+      display: block;
+  }
 
-.page.active {
-    display: block;
-}
-
-li {
+  li {
     display: inline;
-}
+  }
 
-    body {
+  *{
+      padding: auto;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Mulish', sans-serif;   
+  }
+  body {
     width: 100%;
     height: 100vh;
+    display: flex;
     margin: 0;
+    margin-top: 275px;
     background-color: #000000;
-    color: #f5f6f7;
-    font-family: Tahoma;
+    color: black;
+    font-family: Arial, sans-serif;
     font-size: 16px;
+    align-items: center;
+    justify-content: center;
   }
-  
+  .container {
+    width: 60%; /* Adjust width as needed */
+    max-width: 1200px; /* Limit maximum width */
+    margin: 60px auto 20px; /* Center the container horizontally and add margin for spacing */
+    padding: 20px; /* Adjust padding for spacing */
+    background-color: #e8e8e8; /* Background color for the content area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow to the container */
+    border-radius: 0;
+  }
+
   h1, p {
     margin: 1em auto;
     text-align: center;
   }
-  
+   
   form {
-    width: 60vw;
-    max-width: 500px;
+    width: 95%;
+    max-width: 1920px;
     min-width: 300px;
-    margin: 0 auto;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 2em;
+    background-color: white;
   }
   
   fieldset {
@@ -96,16 +98,17 @@ li {
     width: unset;
     margin: 0 0.5em 0 0;
     vertical-align: middle;
+    display: inline; 
   }
   
   input[type="submit"] {
     display: block;
-    width: 60%;
+    width: 80%;
     margin: 1em auto;
     height: 2em;
     font-size: 1.1rem;
-    background-color: #13b320;
-    border-color: #12b320;
+    background-color: crimson;
+    border-color: crimson;
     min-width: 300px;
   }
   
@@ -113,27 +116,33 @@ li {
     padding: 1px 2px;
   }
   
-  .inline{
-    display: inline; 
-  }
+
   </style>
-          <ul class="topnav">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="registration.html">Register</a></li>
-            <li><a href="#Library">Library</a></li>
-            <li><a href="#Nutrition">Nutrition</a></li>
-            <li><a href="#Progress">Progress</a></li>
-            <li><a href="#Challenges">Challenges</a></li>
-            <li><a href="#Community">Community</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <div class="topnav">
+      <div class="logo">
+          <img src="dumbbell.png">
+          <a href="index.html">WeLoveGainz</a>
+      </div>
+      <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="registration.html">Register</a></li>
+          <li><a href="workoutLibrary.html">Library</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="#Progress">Progress</a></li>
+          <li><a href="#Challenges">Challenges</a></li>
+          <li><a href="#Community">Community</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </head>
 
   <body>
-    <h1>Registration Form</h1>
+    <div class="container">
+    <h1 class="headone">Registration Form</h1>
 
     <p>Please fill out this form with the required information</p>
-
+  
     <form method="post" action='https://register-demo.freecodecamp.org'>
 
       <fieldset>
@@ -172,5 +181,6 @@ li {
       </label>
       <input type="submit" value="Submit" />
     </form>
+  </div>
   </body>
 </html>
