@@ -16,16 +16,14 @@
             background-color: black;
         }
         .container {
-            float: left;
+            float: center;
             max-width: 50%;
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 100px;
-            min-width: 1000px;
-            margin-left: 100px;
+            margin-top: 50px;
         }
         .form-container {
             margin-bottom: 20px;
@@ -60,18 +58,15 @@
         .result h3 {
             margin-top: 0;
         }
-        .sideImage {
-            float: right;
-            max-width: 50%;
-            margin: auto;
-            padding: 20px;
-            margin-top: 200px;
-            margin-right: 100px;
-            width: 550px;
-            height: auto;
+        .healthImage {
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
             padding: 2%;
-            
         }
+
     </style>
     <div class="topnav">
         <div class="logo">
@@ -121,11 +116,14 @@
             <p>Your deficit calorie intake is:</p>
             <p id="deficitResult"></p>
         </div>
+
+        <div class="image">
+            <img src="eatingPlate.jpg" alt="Image" class="healthImage">
+          </div>
+
     </div>
 
-    <div class="image">
-        <img src="eatingPlate.jpg" alt="Image" class="sideImage">
-      </div>
+
 
 
     <script>
