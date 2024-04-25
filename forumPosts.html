@@ -9,21 +9,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="navbar.css" >
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-
-        <ul class="topnav">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="registration.html">Register</a></li>
-            <li><a href="#Library">Library</a></li>
-            <li><a href="#Nutrition">Nutrition</a></li>
-            <li><a href="#Progress">Progress</a></li>
-            <li><a class="active" href="challenges.html">Challenges</a></li>
-            <li><a class="active" href="forumPosts.html">Forum</a></li>
-            <li><a href="#Community">Community</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="topnav">
+            <div class="logo">
+                <img src="dumbbell.png">
+                <a href="index.html">WeLoveGainz</a>
+            </div>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="workoutLibrary.html">Library</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="#Progress">Progress</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="forumPosts.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
         <title>Post | We Love Gainz</title>
         <!-- Add background photo (maybe. The forum might look better w/out it) -->
     </head>
@@ -38,15 +43,9 @@
             display: flex;
             align-items:normal; 
             justify-content: flex-start;
+            background-color:#7e0a0a;
         }
-
-        a{ /* Link style: */
-           /* color:blue; */
-           text-decoration: none;
-        } /* Make sure this is consistent with whole website */
         
-        /* Can mess with margin, width, and padding to move around page */
-        /* Change to match style of workout library better */
         .container{
             margin-top: 100px;
             margin-bottom:50px;
@@ -55,13 +54,8 @@
             margin-right:auto;
             width: 1000px;
             padding: 40px 32px;
-        }
-
-        /* Change style to match website */
-        .postTitle{
-            margin-block: 20px;
-            font-weight: lighter;
-            font-size: 24px;
+            background-color:#e8e8e8;
+            color:black;
         }
 
         .head{
@@ -73,29 +67,26 @@
             color:white;
         }
 
-        /* You need to do some adjusting so the username shows up under the word "authors" */
-        .authors{
-            flex:20%;
-        }
-
         .content{
             flex:80%;
         }
 
         .body .authors .username{
             font-size:18px;
-            margin-top:10px;
+            margin-top:30px;
         }
 
-        /* Make this button look like other ones on the site 
-        And figure out how to fix strang cursor issues*/
-        .body .content .comment{
-            border: none;
+        .comment button{
             padding: 10px;
-            font-weight:bolder;
-            box-shadow: 4px 6px #fff;
+            font-weight:bold;
             cursor:pointer;
             margin-top: 5px;
+            background-color: crimson;
+
+            border-radius: 10px;
+            color:#fff;
+            border-color: black;
+            cursor:pointer;
         }
         
         .comment-area{
@@ -113,13 +104,26 @@
             float:right;
             padding:10px;
             border-radius: 10px;
-            cursor:pointer;
             background-color: black;
             color:#fff;
+            cursor:pointer;
         }
 
         .content {
-            margin-top: 10px;;
+            margin-top: 10px;
+        }
+
+        /* Change style to match website */
+        .postTitle{
+            margin-block: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .blackBar{
+            height: 10px;
+            background-color: black;
+            width: 100%;
         }
 
 
@@ -135,9 +139,9 @@
             </div>
 
             <div class="topic-container">
-                <div class="head">
-                    <div class="authors"></div>
-                </div>
+                
+                <!-- Dividing line before posts -->
+                <div class="blackBar"></div>
 
                 <div class="body">
                     <div class="authors">
@@ -150,10 +154,8 @@
                         <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     
-                        <!-- Comment a respone button.
-                        Something  is up with the box causing the mouse pointer to act strange. -->
                         <div class="comment">
-                            <button onclick="showComment()">Comment</button>
+                            <button onclick="showComment()">Reply</button>
                         </div>
                     </div>
                 </div>
@@ -171,7 +173,7 @@
                 <div class="body">
                     <div class="authors">
                         <!-- Push this down so it's not parallel with the submit button -->
-                        <div class="username"><a href="">AnotherUser</a></div>
+                        <div class="username">AnotherUser</div>
                         
                     </div>
                     <div class="content">
@@ -197,11 +199,11 @@
             </div>
     
     
-            <!--Another Comment With replies-->
+            <!--Another Post-->
             <div class="comments-container">
                 <div class="body">
                     <div class="authors">
-                        <div class="username"><a href="">ThirdUser</a></div>
+                        <div class="username">ThirdUser</div>
                         
                     </div>
                     <div class="content">
@@ -230,14 +232,6 @@
 
             
         </div>
-
-        
-
-
-        <div class="logo"> <!-- Begin logo button -->
-            <img src="dumbbell.png">
-            <a href="#">WeLoveGainz</a>
-        </div> <!-- End logo button -->
 
         <!-- Javascript file -->
         <script scr="forum.js"></script>
