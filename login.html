@@ -48,24 +48,24 @@
                 <p>Or</p>
                 <div class="line"></div>
             </div>
-                <form>
-                    <label for="email">Email:</label>
+                <form id="myForm">
+                    <label for="inp_email">Email:</label>
                     <div class="custom-input">
-                        <input type="email" name="email"
+                        <input type="email" name="inp_email" id="inp_email"
                         placeholder="Your Email"
                         autocomplete="off">
                         <i class='bx bx-at'></i>
                     </div>
-                    <label for="password">Password:</label>
+                    <label for="inp_password">Password:</label>
                     <div class="custom-input">
-                        <input type="password" name="password"
+                        <input type="password" name="inp_password" id="inp_password"
                         placeholder="Your Password">
                         <i class='bx bxs-lock-alt' ></i>   
                      </div>
                      <button class="login">Login:</button>
                      <div class="links">
                         <a href="#">Reset Password</a>
-                        <a href="#">Don't Have an account?</a>
+                        <a href="registration.html">Don't Have an account?</a>
                      </div>
                 </form>
             </div>
@@ -74,4 +74,34 @@
         
         
     </body> <!-- Everything above this was in the heading, not body, recheck tags -->
-</html>
+
+    <script>
+const myForm = document.getElementById('myForm');
+
+myForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+    // Construct query string from form data
+    const queryString = new URLSearchParams(formData).toString();
+
+    fetch(`login.php?${queryString}`, {
+        method: 'POST',
+    }).then(function (response) {
+        return response.text();
+    }).then(function (text) {
+        console.log(text);
+    }).catch(function (error) {
+        console.error(error);
+    });
+});
+
+    
+
+
+
+    </script>
+
+
+ </html>
