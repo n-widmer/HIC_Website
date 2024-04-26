@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>We Love Gainz | Group4</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="navbar.css">
 
     </head>
+    <style>
+
+    .page {
+        display: none;
+    }
+    
+    .page.active {
+        display: block;
+    }
+    
+    li {
+        display: inline;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 100px;
+    }
+    h2{
+        text-align: center;
+    }
+
+    body{
+        background-image: url("workingout.jpg");
+    }
+    </style>
+
     <body>
         <div class="topnav">
             <div class="logo">
@@ -21,79 +46,18 @@
                 <li><a href="workoutLibrary.html">Library</a></li>
                 <li><a href="nutrition.html">Nutrition</a></li>
                 <li><a href="#Progress">Progress</a></li>
-                <li><a href="challenges.html">Challenges</a></li>
-                <li><a href="forumPosts.html">Community</a></li>
+                <li><a href="#Challenges">Challenges</a></li>
+                <li><a href="#Community">Community</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        
-        <!-- Pages -->
-        <!-- <div class="page active" id="home">
-            <h1>Home Page</h1>
-            <p>This is the home page content.</p>
-        </div> -->
-        
-        <div class="page" id="news">
-            <h1>News Page</h1>
-            <p>This is the news page content.</p>
-        </div>
-        
-        <div class="page" id="contact">
-            <h1>Contact Page</h1>
-            <p>This is the contact page content.</p>
-        </div>
-        
-        <div class="page" id="about">
-            <h1>About Page</h1>
-            <p>This is the about page content.</p>
+         
+         <div class="page active" id="home">
+            <h1>Welcome to WeLoveGainz!</h1>
         </div>
 
-        
-        <div class="logo">
-            <img src="dumbbell.png">
-            <a href="#">WeLoveGainz</a>
+        <div>
+            <h2>About The Team...</h2>
         </div>
-
-        <div class="container">
-            <h1>Login to your account</h1>
-            <div class="social-login">
-                <button class="google">
-                    <i class='bx bxl-google'></i>
-                    Use Google
-                </button>
-                <button class="google">
-                    <i class='bx bxl-apple'></i>
-                    Use Apple
-                </button>
-            </div>
-            <div class="divider">
-                <div class="line"></div>
-                <p>Or</p>
-                <div class="line"></div>
-            </div>
-                <form>
-                    <label for="email">Email:</label>
-                    <div class="custom-input">
-                        <input type="email" name="email"
-                        placeholder="Your Email"
-                        autocomplete="off">
-                        <i class='bx bx-at'></i>
-                    </div>
-                    <label for="password">Password:</label>
-                    <div class="custom-input">
-                        <input type="password" name="password"
-                        placeholder="Your Password">
-                        <i class='bx bxs-lock-alt' ></i>   
-                     </div>
-                     <button class="login">Login:</button>
-                     <div class="links">
-                        <a href="#">Reset Password</a>
-                        <a href="#">Don't Have an account?</a>
-                     </div>
-                </form>
-            </div>
-
-        </div>
-        
-    </body>
+    </body> 
 </html>
