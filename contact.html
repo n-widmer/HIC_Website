@@ -21,7 +21,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 body {
   margin-top: 50px;
-  background-image: url('contactBackground.jpg');
+  background-color: #b73c3c;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -30,6 +30,16 @@ body {
 }
 
 input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -93,9 +103,9 @@ footer img {
       <li><a href="registration.html">Register</a></li>
       <li><a href="workoutLibrary.html">Library</a></li>
       <li><a href="nutrition.html">Nutrition</a></li>
-      <li><a href="#Progress">Progress</a></li>
-      <li><a href="#Challenges">Challenges</a></li>
-      <li><a href="#Community">Community</a></li>
+      <li><a href="progresstracker.html">Progress</a></li>
+      <li><a href="challenges.html">Challenges</a></li>
+      <li><a href="forumPosts.html">Community</a></li>
       <li><a href="contact.html">Contact</a></li>
   </ul>
 </div>
@@ -104,22 +114,20 @@ footer img {
 
 <div class="container">
     <h1 class="headone">Contact Us</h1>
-  <form action="/action_page.php">
+    
+  <form action="https://api.web3forms.com/submit" method="post">
+    <input type="hidden" name="access_key" value="d3d8ac11-9c25-4a3d-88cf-41600eb95b44">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="usa">United States</option>
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-    </select>
+    <label for="Email">Email</label>
+    <input type="email" name="email" placeholder="Enter your email" required>
 
     <label for="Message">Message</label>
-    <textarea id="subject" name="subject" placeholder="Type here..." style="height:150px"></textarea>
+    <textarea id="subject" name="message" placeholder="Type here..." style="height:150px"></textarea>
 
     <input type="submit" value="Submit">
   </form>

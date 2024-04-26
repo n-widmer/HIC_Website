@@ -13,19 +13,17 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: black;
+            background-color: #b73c3c;
         }
         .container {
-            float: left;
+            float: center;
             max-width: 50%;
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 100px;
-            min-width: 1000px;
-            margin-left: 100px;
+            margin-top: 50px;
         }
         .form-container {
             margin-bottom: 20px;
@@ -60,18 +58,15 @@
         .result h3 {
             margin-top: 0;
         }
-        .sideImage {
-            float: right;
-            max-width: 50%;
-            margin: auto;
-            padding: 20px;
-            margin-top: 200px;
-            margin-right: 100px;
-            width: 550px;
-            height: auto;
+        .healthImage {
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
             padding: 2%;
-            
         }
+
     </style>
     <div class="topnav">
         <div class="logo">
@@ -84,9 +79,9 @@
             <li><a href="registration.html">Register</a></li>
             <li><a href="workoutLibrary.html">Library</a></li>
             <li><a href="nutrition.html">Nutrition</a></li>
-            <li><a href="#Progress">Progress</a></li>
-            <li><a href="#Challenges">Challenges</a></li>
-            <li><a href="#Community">Community</a></li>
+            <li><a href="progresstracker.html">Progress</a></li>
+            <li><a href="challenges.html">Challenges</a></li>
+            <li><a href="forumPosts.html">Community</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
@@ -98,7 +93,7 @@
             <h2 class="headone">Nutrition Calculator</h2>
             <form id="nutritionForm">
                 <label for="gender">Gender:</label>
-                <input type="text" id="gender" name="gender" placeholder="Enter gender"><br>
+                <input type="text" id="gender" name="gender" placeholder="Enter gender" required><br>
                 <label for="age">Age:</label>
                 <input type="text" id="age" name="age" placeholder="Enter age"><br>
                 <label for="weight">Weight (lbs):</label>
@@ -121,11 +116,14 @@
             <p>Your deficit calorie intake is:</p>
             <p id="deficitResult"></p>
         </div>
+
+        <div class="image">
+            <img src="eatingPlate.jpg" alt="Image" class="healthImage">
+          </div>
+
     </div>
 
-    <div class="image">
-        <img src="eatingPlate.jpg" alt="Image" class="sideImage">
-      </div>
+
 
 
     <script>
