@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="forum.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+        <div class="topnav">
+            <div class="logo">
+                <img src="dumbbell.png">
+                <a href="index.html">WeLoveGainz</a>
+            </div>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="workoutLibrary.html">Library</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="#Progress">Progress</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="forumPosts.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <title>Challenges | We Love Gainz</title>
+    </head>
+
+    <style>
+        .container{
+            height: auto;
+            margin:60px auto 20px;
+            padding:20px;
+            margin-top:140px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        
+        .CGheader{
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 75px;
+            align-items:safe;
+            justify-content:center !important;
+            text-align: center;
+            color:black;
+            text-shadow:
+                1px 1px 0 #fff,
+                -1px -1px 0 #fff,  
+                1px -1px 0 #fff,
+                -1px  1px 0 #fff,
+                1px  1px 0 #fff;
+                background-color: none;
+        }
+
+        .container .bigButton{
+            padding: 6px;
+            width: 100%;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 1rem;
+            font-weight: 700;
+            border: 1px solid #1d1d1d;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background:#000;
+        }
+
+        .container .bigButton:hover{
+            background:crimson;
+            color:white;
+        }
+
+        .weekday{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .todayWorkout{
+            background:#000;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .todayWorkout:hover{
+            background:crimson;
+        }
+
+    </style>
+
+    <body>
+        
+        <!-- Container one code -->
+        <!-- Has today's workout -->
+        <div class="container">
+            <h1>Today's Goals</h1>
+            <div class="divider">
+                <div class="line"></div>
+                <p>Keep it up!</p>
+                <div class="line"></div>
+            </div>
+            <!-- Consider figuring out a way to code this text to change -->
+            <h3>Core Workout</h3>
+                <button class="bigButton"><a href="workoutLibrary.html"> Get started! </a></button>
+            </div>
+        </div>
+
+        <!-- Title saying "Your Challenges and Goals" -->
+        <div class="CGheader">
+            <h1>Your Challenges and Goals:</h1>
+        </div>
+
+        <!-- Container two code -->
+        <!-- Has the weekly workouts -->
+        <div class="container">
+            <h1>This week:</h1>
+            <div class="divider">
+                <div class="line"></div>
+                <p>Keep it up!</p>
+                <div class="line"></div>
+            </div>
+
+            <!-- List of weekly workouts -->
+            <!-- Could be coded to do stuff -->
+            <div>
+                <div class="weekday">
+                    <h4>Monday: Arm workout
+                        <button type="button" onclick="alert('This day passed already!')"> Completed! </button>
+                    </h4>
+                </div>
+                <div class="weekday">
+                    <h4>Tuesday: Light leg workout
+                        <button type="button" onclick="alert('This day passed already!')"> Incomplete! </button>
+                    </h4>
+                </div>
+                
+                
+                <!-- Should probably code this one to actually do something -->
+                <div class="weekday">
+                    <h4>Wednesday: Core workout
+                            <button class="todayWorkout"><a href="workoutLibrary.html"> Get started! </a></button>
+                    </h4>
+                </div>
+                
+                <div class="weekday">
+                <h4>Thursday: Core workout
+                    <button type="button" onclick="alert('This day hasn\'t started yet!')"> Upcoming </button>
+                </h4>
+                </div>
+                <div class="weekday">
+                <h4>Friday: Weight lifting
+                    <button type="button" onclick="alert('This day hasn\'t started yet!')"> Upcoming </button>
+                </h4>
+                </div>
+                <div class="weekday">
+                <h4>Saturday: Rest day
+                    <button type="button" onclick="alert('This day hasn\'t started yet!')"> Upcoming </button>
+                </h4>
+                </div>
+                <div class="weekday">
+                <h4>Sunday: Leg workout
+                    <button type="button" onclick="alert('This day hasn\'t started yet!')"> Upcoming </button>
+                </h4>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+    </body>
+
+
+
+     
+</html>
