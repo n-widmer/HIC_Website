@@ -21,8 +21,8 @@
             <li><a href="workoutLibrary.html">Library</a></li>
             <li><a href="nutrition.html">Nutrition</a></li>
             <li><a href="#Progress">Progress</a></li>
-            <li><a href="#Challenges">Challenges</a></li>
-            <li><a href="#Community">Community</a></li>
+            <li><a href="challenges.html">Challenges</a></li>
+            <li><a href="forumPosts.html">Community</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
 
@@ -48,60 +48,34 @@
                 <p>Or</p>
                 <div class="line"></div>
             </div>
-                <form id="myForm">
+                <form method="post" name="login-form" action='' id="myForm" >
                     <label for="inp_email">Email:</label>
                     <div class="custom-input">
-                        <input type="email" name="inp_email" id="inp_email"
+                        <input type="email" name="Email" id="inp_email"
                         placeholder="Your Email"
                         autocomplete="off">
                         <i class='bx bx-at'></i>
                     </div>
                     <label for="inp_password">Password:</label>
                     <div class="custom-input">
-                        <input type="password" name="inp_password" id="inp_password"
+                        <input type="password" name="Password" id="inp_password"
                         placeholder="Your Password">
                         <i class='bx bxs-lock-alt' ></i>   
                      </div>
-                     <button class="login">Login:</button>
+                     <input type="submit" value="Submit" id="submit" class="login">
                      <div class="links">
-                        <a href="#">Reset Password</a>
+                        <!-- <a href="#">Reset Password</a> -->
                         <a href="registration.html">Don't Have an account?</a>
                      </div>
                 </form>
             </div>
 
         </div>
+
+        <script src="login.js"></script>
         
         
     </body> <!-- Everything above this was in the heading, not body, recheck tags -->
-
-    <script>
-const myForm = document.getElementById('myForm');
-
-myForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const formData = new FormData(this);
-
-    // Construct query string from form data
-    const queryString = new URLSearchParams(formData).toString();
-
-    fetch(`login.php?${queryString}`, {
-        method: 'POST',
-    }).then(function (response) {
-        return response.text();
-    }).then(function (text) {
-        console.log(text);
-    }).catch(function (error) {
-        console.error(error);
-    });
-});
-
-    
-
-
-
-    </script>
 
 
  </html>
