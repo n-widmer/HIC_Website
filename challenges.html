@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="forum.css">
+        <link rel="stylesheet" href="library.css">
         <link rel="stylesheet" href="navbar.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -30,26 +32,56 @@
     </head>
 
     <style>
-        .CGheader{
-            padding: 10px;
-            height: 65vh !important;
-            align-items:safe;
-            justify-content:center !important;
-            color:#ff4747;
-            text-shadow:
-                3px 3px 0 #000,
-                -1px -1px 0 #000,  
-                1px -1px 0 #000,
-                -1px  1px 0 #000,
-                1px  1px 0 #000;
+        .container{
+            height: auto;
+            margin:60px auto 20px;
+            padding:20px;
+            margin-top:140px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .container form .login{
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        
+        .CGheader{
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 75px;
+            align-items:safe;
+            justify-content:center !important;
+            text-align: center;
+            color:black;
+            text-shadow:
+                1px 1px 0 #fff,
+                -1px -1px 0 #fff,  
+                1px -1px 0 #fff,
+                -1px  1px 0 #fff,
+                1px  1px 0 #fff;
+                background-color: none;
+        }
+
+        .container .bigButton{
+            padding: 6px;
+            width: 100%;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 1rem;
+            font-weight: 700;
+            border: 1px solid #1d1d1d;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
             background:#000;
         }
 
-        .container form .login:hover{
-            background:rgb(255,71,71);
+        .container .bigButton:hover{
+            background:crimson;
+            color:white;
         }
 
         .weekday{
@@ -65,8 +97,7 @@
             transition: all 0.3s ease;
         }
         .todayWorkout:hover{
-            background:rgb(255,71,71);
-            color:#000;
+            background:crimson;
         }
 
     </style>
@@ -84,15 +115,7 @@
             </div>
             <!-- Consider figuring out a way to code this text to change -->
             <h3>Core Workout</h3>
-                <form>
-                     <button class="login">"Get Started!"</button>
-                     
-                     <!-- Maybe keep these but change titles and links-->
-                     <!--<div class="links"> 
-                        <a href="#">Reset Password</a>
-                        <a href="#">Don't Have an account?</a>
-                     </div>-->
-                </form>
+                <button class="bigButton"><a href="workoutLibrary.html"> Get started! </a></button>
             </div>
         </div>
 
@@ -129,7 +152,7 @@
                 <!-- Should probably code this one to actually do something -->
                 <div class="weekday">
                     <h4>Wednesday: Core workout
-                            <button class="todayWorkout"> Get started! </button>
+                            <button class="todayWorkout"><a href="workoutLibrary.html"> Get started! </a></button>
                     </h4>
                 </div>
                 
