@@ -2,17 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #7e0a0a; /* Background color for the sides of the page */
-    margin-top: 122px; /* Add top margin to create space between header and content */
+    background-color: #b73c3c; /* Background color for the sides of the page */
+    margin-top: 140px; /* Add top margin to create space between header and content */
 }
 .container {
     width: 80%; /* Adjust width as needed */
     max-width: 1200px; /* Limit maximum width */
     margin: 60px auto 20px; /* Center the container horizontally and add margin for spacing */
     padding: 20px; /* Adjust padding for spacing */
-    background-color: #e8e8e8; /* Background color for the content area */
+    background-color: white; /* Background color for the content area */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow to the container */
-    border-radius: 0;
+    
 }
 
 h1 {

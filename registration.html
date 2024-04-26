@@ -32,8 +32,8 @@
     height: 100vh;
     display: flex;
     margin: 0;
-    margin-top: 275px;
-    background-color: #000000;
+    margin-top: 300px;
+    background-color: #b73c3c;
     color: black;
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -47,7 +47,6 @@
     padding: 20px; /* Adjust padding for spacing */
     background-color: #e8e8e8; /* Background color for the content area */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow to the container */
-    border-radius: 0;
   }
 
   h1, p {
@@ -144,7 +143,7 @@
 
     <p>Please fill out this form with the required information</p>
   
-    <form method="post" action='https://script.google.com/macros/s/AKfycbz1VWcLdvdObZOamKBta-8JzMvifoCIRoXk9QmbTSy3If5_V_l8fJJmRFFg_Cv51fT3/exec'>
+    <form method="post" name="contact-form" action='https://script.google.com/macros/s/AKfycbwCIwP15oF7KPP-ybYWvsuulNRT0DXCGzx50fcPccQhnFquNt69MxTBt2Mv30-C2xRQig/exec'>
 
       <fieldset>
         <label for="first-name">Enter Your First Name: <input id="first-name" name="First Name" type="text" required /></label>
@@ -177,9 +176,11 @@
       </fieldset>
 
       
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit" id="submit" />
     </form>
   </div>
+
+  <script src="registration.js"></script>
 
   </body>
 </html>
