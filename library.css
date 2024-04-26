@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #b73c3c;
     margin-top: 140px; /* Add top margin to create space between header and content */
 }
 .container {
