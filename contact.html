@@ -1,103 +1,114 @@
-<html>
+<!DOCTYPE html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="navbar.css">
-<style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="navbar.css">
+  <style>
+    .page {
+      display: none;
+    }
 
-.page {
-    display: none;
-}
+    .page.active {
+      display: block;
+    }
 
-.page.active {
-    display: block;
-}
+    li {
+      display: inline;
+    }
 
-li {
-    display: inline;
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-body {
-  margin-top: 50px;
-  background-color: #b73c3c;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-input[type=email], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
+    body {
+      margin-top: 100px;
+      background-color: #b73c3c;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+    }
 
-input[type=submit] {
-  background-color: crimson;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
 
-input[type=submit]:hover {
-  background-color: rgb(170, 15, 46);
-}
+    input[type=email],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  width: 50%;
-  margin: auto;
-  margin-top: 50px;
-  flex-grow: 1;
-}
+    input[type=submit] {
+      background-color: crimson;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
 
-.container h1 {
-  text-align: center;
-}
+    input[type=submit]:hover {
+      background-color: rgb(170, 15, 46);
+    }
 
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  padding: 24px;
-}
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      width: 50%;
+      margin: auto;
+      margin-top: 50px;
+      flex-grow: 1;
+    }
 
-footer img {
-  width: 75px; 
-  height: 75px;
-}
+    .container h1 {
+      text-align: center;
+    }
 
-</style>
-<div class="topnav">
-  <div class="logo">
-      <img src="dumbbell.png">
+    footer {
+      display: flex;
+      justify-content: space-evenly;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      padding: 50px;
+    }
+
+    footer img {
+      width: 75px;
+      height: 75px;
+    }
+
+  </style>
+  <div class="topnav">
+    <div class="logo">
+      <img src="assets/dumbbell.png">
       <a href="index.html">WeLoveGainz</a>
-  </div>
-  <ul>
+    </div>
+    <ul>
       <li><a class="active" href="index.html">Home</a></li>
       <li><a href="login.html">Login</a></li>
       <li><a href="registration.html">Register</a></li>
@@ -107,14 +118,14 @@ footer img {
       <li><a href="challenges.html">Challenges</a></li>
       <li><a href="forumPosts.html">Community</a></li>
       <li><a href="contact.html">Contact</a></li>
-  </ul>
-</div>
+    </ul>
+  </div>
 </head>
 
-
+<body>
 <div class="container">
-    <h1 class="headone">Contact Us</h1>
-    
+  <h1 class="headone">Contact Us</h1>
+
   <form action="https://api.web3forms.com/submit" method="post">
     <input type="hidden" name="access_key" value="d3d8ac11-9c25-4a3d-88cf-41600eb95b44">
     <label for="fname">First Name</label>
@@ -136,9 +147,9 @@ footer img {
 </body>
 
 <footer>
-    <a href="#"><img src="instagramLogo.svg" alt="Instagram"></a>
-    <a href="#"><img src="twitterLogo.svg" alt="Twitter"></a>
-    <a href="#"><img src="facebookLogo.svg" alt="Facebook"></a>
-  </footer>
+  <a href="#"><img src="assets/instagramLogo.svg" alt="Instagram"></a>
+  <a href="#"><img src="assets/twitterLogo.svg" alt="Twitter"></a>
+  <a href="#"><img src="assets/facebookLogo.svg" alt="Facebook"></a>
+</footer>
 
 </html>

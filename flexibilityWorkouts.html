@@ -10,18 +10,97 @@
     <title>Flexibility and Balance Workouts</title>
     <style>
         
-        td {
-            width: 50%;
+        td img{
+            height: 270px;
+            width: 475px;
         }
         body {
-            margin-top: 20px;
+            margin-top: 170px;
+        }
+        .photo-caption{
+            width: 475px;
+        }
+        td {
+            border: 1px solid;
+        }
+        
+        tr {
+            align-items: center;
+            border: 1px solid;
+            background-color: rgb(230, 230, 230);
+        }
+        table {
+            width: 100%;
+            margin-bottom: 70px;
+            border: 1px solid;
+        }
+        .images, .images tr, .images td{
+            border: none;
+            background-color: white;
+            column-width: auto;
+        }
+        .detail{
+            background-color: white;
+        }
+        
+        .back{
+            position: fixed;
+            justify-content: center;
+            margin-left: -145px;
+            margin-top: 270px;
+        }
+        .back h6{
+            color: black;
+        }
+        .back img{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 50px;
+            height: 40px; 
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class ="back"><a href="workoutLibrary.html"><img src="assets/back.svg"></a><h6>Back to Main Library</h6></div>
+        <h1 class="headone">Flexibility and Balance Workouts</h1>
+        <table class="images">
+            <tr>
+                <td><a href="#flexibility"><img src="assets/flexibility.jpg" alt="Flexibility"></a><figcaption class="photo-caption">Flexibility</figcaption></td>
+                <td><a href="#balance"><img src="assets/balance.jpg" alt="Balance"></a><figcaption class="photo-caption">Balance</figcaption></td>
+            </tr>
+        </table>
+        <h2>Flexibility Exercises</h2>
+        <table id="flexibility">
+            <tr>
+                <td><b>Forward Fold</b></td>
+                <td class="detail">Stand with feet hip-width apart, fold forward from the hips, reaching toward the ground or your shins.</td>
+            </tr>
+            <tr>
+                <td><b>Seated Forward Bend</b></td>
+                <td class="detail">Sit on the floor with legs extended, hinge at the hips to fold forward, reaching toward your toes.</td>
+            </tr>
+        </table>
+        <h2>Balance Exercises</h2>
+        <table id="balance">
+            <tr>
+                <td><b>Single-Leg Balance</b></td>
+                <td class="detail">Stand on one leg, keeping the other leg lifted off the ground, and hold for 30 seconds to 1 minute. Switch sides.</td>
+            </tr>
+            <tr>
+                <td><b>Tree Pose</b></td>
+                <td class="detail">Stand on one leg, place the sole of the other foot against the inner thigh or calf, and bring hands together at chest level. Hold for balance.</td>
+            </tr>
+            <tr>
+                <td><b>Bird Dog</b></td>
+                <td class="detail">Start on hands and knees, extend one arm forward and the opposite leg back, keeping the back straight. Hold for a few seconds, then switch sides.</td>
+            </tr>
+        </table>
+    </div>
     <div class="topnav">
         <div class="logo">
-            <img src="dumbbell.png">
+            <img src="assets/dumbbell.png">
             <a href="index.html">WeLoveGainz</a>
         </div>
         <ul>
@@ -36,24 +115,5 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
-
-    <div class="container">
-        <h1 class="headone">Flexibility and Balance Workouts</h1>
-        <table>
-            <tr>
-                <td><a href="#flexibility"><img src="flexibility.jpg" alt="Flexibility"></a></td>
-                <td><a href="#balance"><img src="balance.jpg" alt="Balance"></a></td>
-            </tr>
-        </table>
-        <h2>Flexibility Exercises</h2>
-        <table id="flexibility">
-            <!-- Add flexibility exercises and descriptions here -->
-        </table>
-        <h2>Balance Exercises</h2>
-        <table id="balance">
-            <!-- Add balance exercises and descriptions here -->
-        </table>
-    </div>
-
 </body>
 </html>

@@ -12,7 +12,7 @@
 
         <div class="topnav">
             <div class="logo">
-                <img src="dumbbell.png">
+                <img src="assets/dumbbell.png">
                 <a href="index.html">WeLoveGainz</a>
             </div>
             <ul>
@@ -31,34 +31,49 @@
     </head>
 
     <style>
-        .container{
+        body{
             height: auto;
-            margin:60px auto 20px;
-            padding:20px;
-            margin-top:140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #b73c3c;
+            margin-top: 100px;
+            background-image: url("assets/home.jpg");
+            background-size: cover;
+        }
+        .container{
+            margin-top: 0;
+            width: 450px;
+            height: 500px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+        }
+
+        .mainContainer{
+            width: 1000px;
+            height: 600px;
+            padding: 20px;
+            background-color: white;
+            justify-content: center !important;
+            border-radius: 8px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        
+        td {
+            padding: 10px;
         }
 
         a{
             text-decoration: none;
             color:white;
         }
+        h6{
+            padding: 10px;
+        }
         
         .CGheader{
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 75px;
-            align-items:safe;
             justify-content:center !important;
             text-align: center;
-            color:black;
-            text-shadow:
-                1px 1px 0 #fff,
-                -1px -1px 0 #fff,  
-                1px -1px 0 #fff,
-                -1px  1px 0 #fff,
-                1px  1px 0 #fff;
-                background-color: none;
         }
 
         .container .bigButton{
@@ -98,88 +113,106 @@
         .todayWorkout:hover{
             background:crimson;
         }
+        .line{
+            height: 1px;
+            width: 100%;
+            background: #1d1d1d;
+            opacity: 0.2;
+            margin: 10px 0 0 0;
+        }
+        img{
+            width: 100%
+        }
 
     </style>
 
     <body>
-        
-        <!-- Container one code -->
-        <!-- Has today's workout -->
-        <div class="container">
-            <h1>Today's Goals</h1>
-            <div class="divider">
-                <div class="line"></div>
-                <p>Keep it up!</p>
-                <div class="line"></div>
-            </div>
-            <!-- Consider figuring out a way to code this text to change -->
-            <h3>Core Workout</h3>
-                <button class="bigButton"><a href="workoutLibrary.html"> Get started! </a></button>
-            </div>
-        </div>
-
+        <div class="mainContainer">
         <!-- Title saying "Your Challenges and Goals" -->
         <div class="CGheader">
-            <h1>Your Challenges and Goals:</h1>
+            <h1 class="headone">Your Challenges and Goals:</h1>
         </div>
-
-        <!-- Container two code -->
-        <!-- Has the weekly workouts -->
-        <div class="container">
-            <h1>This week:</h1>
-            <div class="divider">
-                <div class="line"></div>
-                <p>Keep it up!</p>
-                <div class="line"></div>
+        <div class="line"></div>
+        <table>
+            <!-- Container one code -->
+            <!-- Has today's workout -->
+            <td>
+            <div class="container">
+                <h1>Today's Goals</h1>
+                <div class="divider">
+                    <div class="line"></div>
+                    <p>Keep it up!</p>
+                    <div class="line"></div>
+                </div>
+                <!-- Consider figuring out a way to code this text to change -->
+                <h3>Core Workout</h3>
+                <h6>Try crunches and planks! Aim for 2 minutes on plank to exceed today's goal!</h6>
+                <img src="assets/planking.jpg" alt="Planking">
+                <button class="bigButton"><a href="strengthWorkouts.html#abs"> Get started! </a></button>
             </div>
-
-            <!-- List of weekly workouts -->
-            <!-- Could be coded to do stuff -->
-            <div>
-                <div class="weekday">
-                    <h4>Monday: Arm workout
-                        <button type="button" onclick="alert('This day passed already!')"> Completed! </button>
-                    </h4>
+        </td>
+    
+    
+            <!-- Container two code -->
+            <!-- Has the weekly workouts -->
+            <td>
+            <div class="container">
+                <h1>This week</h1>
+                <div class="divider">
+                    <div class="line"></div>
+                    <p>Keep it up!</p>
+                    <div class="line"></div>
                 </div>
-                <div class="weekday">
-                    <h4>Tuesday: Light leg workout
-                        <button type="button" onclick="alert('This day passed already!')"> Incomplete! </button>
-                    </h4>
-                </div>
-                
-                
-                <!-- Should probably code this one to actually do something -->
-                <div class="weekday">
-                    <h4>Wednesday: Core workout
+    
+                <!-- List of weekly workouts -->
+                <!-- Could be coded to do stuff -->
+                <div>
+                    <div class="weekday">
+                        <h4>Monday: Arm workout
+                            <button type="button" onclick="alert('This day passed already!')"> Completed! </button>
+                        </h4>
+                    </div>
+                    <div class="weekday">
+                        <h4>Tuesday: Light leg workout
+                            <button type="button" onclick="alert('This day passed already!')"> Incomplete! </button>
+                        </h4>
+                    </div>
+    
+    
+                    <!-- Should probably code this one to actually do something -->
+                    <div class="weekday">
+                        <h4>Wednesday: Core workout
                             <button class="todayWorkout"><a href="workoutLibrary.html"> Get started! </a></button>
-                    </h4>
-                </div>
-                
-                <div class="weekday">
-                <h4>Thursday: Core workout
-                    <button type="button" onclick="alert('This day hasn\'t started yet!')"> Upcoming </button>
-                </h4>
-                </div>
-                <div class="weekday">
-                <h4>Friday: Weight lifting
-                    <button type="button" onclick="alert('This day hasn\'t started yet!')"> Upcoming </button>
-                </h4>
-                </div>
-                <div class="weekday">
-                <h4>Saturday: Rest day
-                    <button type="button" onclick="alert('This day hasn\'t started yet!')"> Upcoming </button>
-                </h4>
-                </div>
-                <div class="weekday">
-                <h4>Sunday: Leg workout
-                    <button type="button" onclick="alert('This day hasn\'t started yet!')"> Upcoming </button>
-                </h4>
+                        </h4>
+                    </div>
+    
+                    <div class="weekday">
+                        <h4>Thursday: Core workout
+                            <button type="button" onclick="alert('This day hasn\'t started yet!')"> Upcoming </button>
+                        </h4>
+                    </div>
+                    <div class="weekday">
+                        <h4>Friday: Weight lifting
+                            <button type="button" onclick="alert('This day hasn\'t started yet!')"> Upcoming </button>
+                        </h4>
+                    </div>
+                    <div class="weekday">
+                        <h4>Saturday: Rest day
+                            <button type="button" onclick="alert('This day hasn\'t started yet!')"> Upcoming </button>
+                        </h4>
+                    </div>
+                    <div class="weekday">
+                        <h4>Sunday: Leg workout
+                            <button type="button" onclick="alert('This day hasn\'t started yet!')"> Upcoming </button>
+                        </h4>
+                    </div>
                 </div>
             </div>
-            </div>
-        </div>
-
-
+        </td>
+        
+        </table>
+    </div>
+    
     </body>
 
 

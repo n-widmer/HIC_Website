@@ -19,10 +19,11 @@
     li {
         display: inline;
     }
-
+    .container{
+        background-color: white;
+    }
     h1{
         text-align: center;
-        margin-top: 100px;
     }
     h2{
         text-align: center;
@@ -32,16 +33,19 @@
         text-align: center;
         margin-top: 5px;
     }
-
+    .container{
+        opacity: 90%;
+    }
     body{
-        background-image: url("workingout.jpg");
+        background-image: url("assets/home.jpg");
+        background-size: cover;
     }
     </style>
 
     <body>
         <div class="topnav">
             <div class="logo">
-                <img src="dumbbell.png">
+                <img src="assets/dumbbell.png">
                 <a href="index.html">WeLoveGainz</a>
             </div>
             <ul>
@@ -56,13 +60,13 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-         
+         <div class="container">
          <div class="page active" id="home">
-            <h1>Welcome to WeLoveGainz!</h1>
+            <h1 class="headone">Welcome to WeLoveGainz!</h1>
             <h2>"The only easy day was yesterday"</h2>
             <p>-David Goggins</p>
         </div>
-
+</div>
 
     </body> 
 </html>

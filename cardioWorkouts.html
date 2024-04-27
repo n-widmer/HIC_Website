@@ -10,23 +10,174 @@
     <title>Cardio Workouts</title>
     <style>
         body {
-            margin-top: 925px;
-        }
-        td {
-            width: 25%;
-        }
-        table {
-            margin-bottom: 70px;
+            margin-top: 725px;
+            margin-bottom: 650px;
         }
         td img {
             width: 330px; /* Make images fill the width of their container */
             height: 190px;
             cursor: pointer;
         }
+        td {
+            border: 1px solid;
+        }
+        tr {
+            align-items: center;
+            border: 1px solid;
+            background-color: rgb(230, 230, 230);
+        }
+        table {
+            width: 100%;
+            margin-bottom: 70px;
+            border: 1px solid;
+        }
+        .images, .images tr, .images td{
+            border: none;
+            background-color: white;
+            column-width: auto;
+        }
+        .detail{
+            background-color: white;
+        }
+        .back{
+            position: fixed;
+            justify-content: center;
+            margin-left: -145px;
+            margin-top: 270px;
+        }
+        .back h6{
+            color: black;
+        }
+        .back img{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 50px;
+            height: 40px; 
+        }
     </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class ="back"><a href="workoutLibrary.html"><img src="assets/back.svg"></a><h6>Back to Main Library</h6></div>
+        <h1 class="headone">Cardio Workouts</h1>
+        <table class="images">
+            <tr>
+                <td><a href="#lowintensity"><img src="assets/lowintense.jpg" alt="Low Intensity"></a><figcaption class="photo-caption">Low Intensity</figcaption></td>
+                <td><a href="#moderateintensity"><img src="assets/moderateintense.jpg" alt="Moderate Intensity"></a><figcaption class="photo-caption">Moderate Intensity</figcaption></td>
+                <td><a href="#highintensity"><img src="assets/highintense.jpg" alt="High Intensity"></a><figcaption class="photo-caption">High Intensity</figcaption></td>
+            </tr>
+            <tr id="lowintensity"></tr>
+        </table>
+        <h2>Low Intensity</h2>
+        <table>
+            <tr>
+                <td><b>Walking</b></td>
+                <td class="detail">Walking is a low-impact exercise that is easy to do and doesn't require any special equipment. It's a great way to get your heart rate up and improve cardiovascular health.</td>
+            </tr>
+            <tr>
+                <td><b>Swimming</b></td>
+                <td class="detail">Swimming is a full-body workout that is easy on the joints. It works your muscles, improves cardiovascular health, and can help with weight loss.</td>
+            </tr>
+            <tr>
+                <td><b>Jogging</b></td>
+                <td class="detail">Jogging is a simple and effective way to improve cardiovascular fitness. It can help with weight loss, stress relief, and overall health.</td>
+            </tr>
+            <tr>
+                <td><b>Yoga</b></td>
+                <td class="detail">Yoga is a low-impact exercise that combines physical postures, breathing exercises, and meditation. It can improve flexibility, strength, and relaxation.</td>
+            </tr>
+            <tr>
+                <td><b>Dancing</b></td>
+                <td class="detail">Dancing is a fun way to get your heart rate up and improve cardiovascular health. It can also improve coordination, balance, and mood.</td>
+            </tr>
+            <tr>
+                <td><b>Hiking</b></td>
+                <td class="detail">Hiking is a great way to get outdoors and enjoy nature while getting a good cardio workout. It can improve cardiovascular health, muscle strength, and mental well-being.</td>
+            </tr>
+            <tr>
+                <td><b>Elliptical Training</b></td>
+                <td class="detail">Elliptical training is a low-impact exercise that can provide a full-body workout. It's great for improving cardiovascular fitness, muscle tone, and endurance.</td>
+            </tr>
+            <tr id="moderateintensity"></tr>
+        </table>
+        <h2>Moderate Intensity</h2>
+        <table>
+            <tr>
+                <td><b>Cycling</b></td>
+                <td class="detail">Cycling is a great cardiovascular exercise that can be done indoors or outdoors. It strengthens the heart, lungs, and lower body muscles.</td>
+            </tr>
+            <tr>
+                <td><b>Rowing</b></td>
+                <td class="detail">Rowing is a low-impact, full-body workout that can help improve cardiovascular health, build muscle strength, and burn calories.</td>
+            </tr>
+            <tr>
+                <td><b>Running</b></td>
+                <td class="detail">Running is a classic cardio workout that can improve cardiovascular health, burn calories, and boost mood. It's a versatile exercise that can be done outdoors or on a treadmill.</td>
+            </tr>
+            <tr>
+                <td><b>Kickboxing</b></td>
+                <td class="detail">Kickboxing is a high-energy workout that combines martial arts techniques with cardio exercises. It improves cardiovascular fitness, strength, and coordination.</td>
+            </tr>
+            <tr>
+                <td><b>Circuit Training</b></td>
+                <td class="detail">Circuit training involves performing a series of exercises in quick succession with minimal rest in between. It provides a total-body workout that improves cardiovascular fitness, strength, and endurance.</td>
+            </tr>
+            <tr>
+                <td><b>Boxing</b></td>
+                <td class="detail">Boxing is a high-intensity cardio workout that combines punches, footwork, and defensive moves. It's a great way to improve cardiovascular fitness, coordination, and upper-body strength.</td>
+            </tr>
+            <tr>
+                <td><b>Group Fitness Classes</b></td>
+                <td class="detail">Group fitness classes like Zumba, HIIT, and aerobics offer a fun and motivating way to get a cardio workout. They typically involve high-energy movements set to music and are suitable for all fitness levels.</td>
+            </tr>
+            <tr id="highintensity"></tr>
+        </table>
+        <h2>High Intensity</h2>
+        <table>
+            <tr>
+                <td><b>HIIT (High-Intensity Interval Training)</b></td>
+                <td class="detail">HIIT is a workout that alternates between short bursts of intense exercise and periods of rest or lower-intensity exercise. It can help improve cardiovascular fitness and burn fat.</td>
+            </tr>
+            <tr>
+                <td><b>Jumping Rope</b></td>
+                <td class="detail">Jumping rope is a high-intensity cardio workout that can improve cardiovascular health, agility, coordination, and endurance.</td>
+            </tr>
+            <tr>
+                <td><b>Burpees</b></td>
+                <td class="detail">Burpees are a full-body exercise that combines a squat, push-up, and jump. They provide a high-intensity cardio workout that targets multiple muscle groups and increases heart rate.</td>
+            </tr>
+            <tr>
+                <td><b>Tabata Training</b></td>
+                <td class="detail">Tabata training consists of 20 seconds of high-intensity exercise followed by 10 seconds of rest, repeated for multiple rounds. It's a quick and efficient way to improve cardiovascular fitness and burn fat.</td>
+            </tr>
+            <tr>
+                <td><b>Mountain Climbers</b></td>
+                <td class="detail">Mountain climbers are a dynamic cardio exercise that engages the core, arms, and legs. They elevate heart rate, improve agility, and enhance overall cardiovascular endurance.</td>
+            </tr>
+            <tr>
+                <td><b>Sprinting</b></td>
+                <td class="detail">Sprinting involves running at maximum speed for short distances. It's an explosive cardio workout that builds speed, power, and anaerobic endurance.</td>
+            </tr>
+            <tr>
+                <td><b>Jump Squats</b></td>
+                <td class="detail">Jump squats combine a squat with an explosive jump. They're an effective plyometric exercise that strengthens the lower body, boosts cardiovascular fitness, and burns calories.</td>
+            </tr>
+            <tr>
+                <td><b>Box Jumps</b></td>
+                <td class="detail">Box jumps require jumping onto and off of a raised platform. They're a challenging plyometric exercise that improves explosive power, agility, and cardiovascular conditioning.</td>
+            </tr>
+            <tr>
+                <td><b>Battle Ropes</b></td>
+                <td class="detail">Battle ropes are heavy, thick ropes that are anchored to a point and used for a variety of cardio and strength exercises. They provide a full-body workout that improves cardiovascular endurance, strength, and coordination.</td>
+            </tr>
+        </table>
+    </div>
+
     <div class="topnav">
         <div class="logo">
-            <img src="dumbbell.png">
+            <img src="assets/dumbbell.png">
             <a href="index.html">WeLoveGainz</a>
         </div>
         <ul>
@@ -41,123 +192,5 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
-
-</head>
-<body>
-    <div class="container">
-        <h1 class="headone">Cardio Workouts</h1>
-        <table>
-            <tr>
-                <td><a href="#lowintensity"><img src="lowintense.jpg" alt="Low Intensity"></a></td>
-                <td><a href="#moderateintensity"><img src="moderateintense.jpg" alt="Moderate Intensity"></a></td>
-                <td><a href="#highintensity"><img src="highintense.jpg" alt="High Intensity"></a></td>
-            </tr>
-            <tr id="lowintensity"></tr>
-        </table>
-        <h2>Low Intensity</h2>
-        <table>
-            <tr>
-                <td><b>Walking</b></td>
-                <td>Walking is a low-impact exercise that is easy to do and doesn't require any special equipment. It's a great way to get your heart rate up and improve cardiovascular health.</td>
-            </tr>
-            <tr>
-                <td><b>Swimming</b></td>
-                <td>Swimming is a full-body workout that is easy on the joints. It works your muscles, improves cardiovascular health, and can help with weight loss.</td>
-            </tr>
-            <tr>
-                <td><b>Jogging</b></td>
-                <td>Jogging is a simple and effective way to improve cardiovascular fitness. It can help with weight loss, stress relief, and overall health.</td>
-            </tr>
-            <tr>
-                <td><b>Yoga</b></td>
-                <td>Yoga is a low-impact exercise that combines physical postures, breathing exercises, and meditation. It can improve flexibility, strength, and relaxation.</td>
-            </tr>
-            <tr>
-                <td><b>Dancing</b></td>
-                <td>Dancing is a fun way to get your heart rate up and improve cardiovascular health. It can also improve coordination, balance, and mood.</td>
-            </tr>
-            <tr>
-                <td><b>Hiking</b></td>
-                <td>Hiking is a great way to get outdoors and enjoy nature while getting a good cardio workout. It can improve cardiovascular health, muscle strength, and mental well-being.</td>
-            </tr>
-            <tr>
-                <td><b>Elliptical Training</b></td>
-                <td>Elliptical training is a low-impact exercise that can provide a full-body workout. It's great for improving cardiovascular fitness, muscle tone, and endurance.</td>
-            </tr>
-            <tr id="moderateintensity"></tr>
-        </table>
-        <h2>Moderate Intensity</h2>
-        <table>
-            <tr>
-                <td><b>Cycling</b></td>
-                <td>Cycling is a great cardiovascular exercise that can be done indoors or outdoors. It strengthens the heart, lungs, and lower body muscles.</td>
-            </tr>
-            <tr>
-                <td><b>Rowing</b></td>
-                <td>Rowing is a low-impact, full-body workout that can help improve cardiovascular health, build muscle strength, and burn calories.</td>
-            </tr>
-            <tr>
-                <td><b>Running</b></td>
-                <td>Running is a classic cardio workout that can improve cardiovascular health, burn calories, and boost mood. It's a versatile exercise that can be done outdoors or on a treadmill.</td>
-            </tr>
-            <tr>
-                <td><b>Kickboxing</b></td>
-                <td>Kickboxing is a high-energy workout that combines martial arts techniques with cardio exercises. It improves cardiovascular fitness, strength, and coordination.</td>
-            </tr>
-            <tr>
-                <td><b>Circuit Training</b></td>
-                <td>Circuit training involves performing a series of exercises in quick succession with minimal rest in between. It provides a total-body workout that improves cardiovascular fitness, strength, and endurance.</td>
-            </tr>
-            <tr>
-                <td><b>Boxing</b></td>
-                <td>Boxing is a high-intensity cardio workout that combines punches, footwork, and defensive moves. It's a great way to improve cardiovascular fitness, coordination, and upper-body strength.</td>
-            </tr>
-            <tr>
-                <td><b>Group Fitness Classes</b></td>
-                <td>Group fitness classes like Zumba, HIIT, and aerobics offer a fun and motivating way to get a cardio workout. They typically involve high-energy movements set to music and are suitable for all fitness levels.</td>
-            </tr>
-            <tr id="highintensity"></tr>
-        </table>
-        <h2>High Intensity</h2>
-        <table>
-            <tr>
-                <td><b>HIIT (High-Intensity Interval Training)</b></td>
-                <td>HIIT is a workout that alternates between short bursts of intense exercise and periods of rest or lower-intensity exercise. It can help improve cardiovascular fitness and burn fat.</td>
-            </tr>
-            <tr>
-                <td><b>Jumping Rope</b></td>
-                <td>Jumping rope is a high-intensity cardio workout that can improve cardiovascular health, agility, coordination, and endurance.</td>
-            </tr>
-            <tr>
-                <td><b>Burpees</b></td>
-                <td>Burpees are a full-body exercise that combines a squat, push-up, and jump. They provide a high-intensity cardio workout that targets multiple muscle groups and increases heart rate.</td>
-            </tr>
-            <tr>
-                <td><b>Tabata Training</b></td>
-                <td>Tabata training consists of 20 seconds of high-intensity exercise followed by 10 seconds of rest, repeated for multiple rounds. It's a quick and efficient way to improve cardiovascular fitness and burn fat.</td>
-            </tr>
-            <tr>
-                <td><b>Mountain Climbers</b></td>
-                <td>Mountain climbers are a dynamic cardio exercise that engages the core, arms, and legs. They elevate heart rate, improve agility, and enhance overall cardiovascular endurance.</td>
-            </tr>
-            <tr>
-                <td><b>Sprinting</b></td>
-                <td>Sprinting involves running at maximum speed for short distances. It's an explosive cardio workout that builds speed, power, and anaerobic endurance.</td>
-            </tr>
-            <tr>
-                <td><b>Jump Squats</b></td>
-                <td>Jump squats combine a squat with an explosive jump. They're an effective plyometric exercise that strengthens the lower body, boosts cardiovascular fitness, and burns calories.</td>
-            </tr>
-            <tr>
-                <td><b>Box Jumps</b></td>
-                <td>Box jumps require jumping onto and off of a raised platform. They're a challenging plyometric exercise that improves explosive power, agility, and cardiovascular conditioning.</td>
-            </tr>
-            <tr>
-                <td><b>Battle Ropes</b></td>
-                <td>Battle ropes are heavy, thick ropes that are anchored to a point and used for a variety of cardio and strength exercises. They provide a full-body workout that improves cardiovascular endurance, strength, and coordination.</td>
-            </tr>
-        </table>
-    </div>
-
 </body>
 </html>
