@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Strength Workouts</title>
+    <style>
+        body {
+            margin-top: 550px;
+            margin-bottom: 650px;
+        }
+        td {
+            border: 1px solid;
+        }
+        td img{
+            width: 330px;
+            cursor: pointer;
+        }
+        tr {
+            align-items: center;
+            border: 1px solid;
+            background-color: rgb(230, 230, 230);
+        }
+        table {
+            width: 100%;
+            margin-bottom: 70px;
+            border: 1px solid;
+        }
+        .images, .images tr, .images td{
+            border: none;
+            background-color: white;
+            column-width: auto;
+        }
+        .detail{
+            background-color: white;
+        }
+        
+        .back{
+            position: fixed;
+            justify-content: center;
+            margin-left: -145px;
+            margin-top: 270px;
+        }
+        .back h6{
+            color: black;
+        }
+        .back img{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 50px;
+            height: 40px; 
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class ="back"><a href="workoutLibrary.html"><img src="assets/back.svg"></a><h6>Back to Main Library</h6></div>
+        <h1 class="headone"> Strength Workouts</h1>
+        <table class="images">
+            <tr>
+                <td><a href="#legs"><img src="assets/legs.jpg" alt="Legs"></a><figcaption class="photo-caption">Legs</figcaption></td>
+                <td><a href="#back"><img src="assets/back.jpg" alt="Back"></a><figcaption class="photo-caption">Back</figcaption></td>
+                <td><a href="#arms"><img src="assets/arms.jpg" alt="Arms"></a><figcaption class="photo-caption">Arms</figcaption></td>
+            </tr>
+            <tr class="second">
+                <td><a href="#chest"><img src="assets/chest.jpg" alt="Chest"></a><figcaption class="photo-caption">Chest</figcaption></td>
+                <td><a href="#abs"><img src="assets/abs.jpg" alt="Abs"></a><figcaption class="photo-caption">Abs</figcaption></td>
+            </tr>
+            <tr id="chest"></tr>
+        </table>
+        <h2>Chest Workouts</h2>
+        <table>
+            <tr>
+                <td><b>Bench Press</b></td>
+                <td class="detail">The bench press is a compound exercise that targets the chest, shoulders, and triceps. Lie flat on a bench and lift a barbell up and down.</td>
+            </tr>
+            <tr>
+                <td><b>Push-Ups</b></td>
+                <td class="detail">Push-ups are a bodyweight exercise that targets the chest, shoulders, and triceps. Place your hands on the ground and push your body up and down.</td>
+            </tr>
+            <tr id="back"></tr>
+        </table>
+        <h2>Back Workouts</h2>
+        <table>
+            <tr>
+                <td><b>Deadlifts</b></td>
+                <td class="detail">Deadlifts are a compound exercise that targets the lower back, glutes, hamstrings, and core. Stand with a barbell and lift it up from the ground to hip level.</td>
+            </tr>
+            <tr>
+                <td><b>Pull-Ups</b></td>
+                <td class="detail">Pull-ups are a bodyweight exercise that targets the back, shoulders, and arms. Hang from a bar and pull your body up until your chin reaches the bar.</td>
+            </tr>
+            <tr id="arms"></tr>
+        </table>
+        <h2>Arm Workouts</h2>
+        <table>
+            <tr>
+                <td><b>Bicep Curls</b></td>
+                <td class="detail">Bicep curls target the biceps and forearms. Hold dumbbells in your hands and curl them up towards your shoulders.</td>
+            </tr>
+            <tr>
+                <td><b>Tricep Dips</b></td>
+                <td class="detail">Tricep dips target the triceps and shoulders. Sit on a bench and lower your body by bending your elbows.</td>
+            </tr>
+            <tr id="legs"></tr>
+        </table>
+        <h2>Leg Workouts</h2>
+        <table>
+            <tr>
+                <td><b>Squats</b></td>
+                <td class="detail">Squats target the quadriceps, hamstrings, glutes, and calves. Stand with your feet shoulder-width apart and lower your body down as if sitting in a chair.</td>
+            </tr>
+            <tr>
+                <td><b>Lunges</b></td>
+                <td class="detail">Lunges target the quadriceps, hamstrings, glutes, and calves. Step forward with one leg and lower your body until both knees are bent at a 90-degree angle.</td>
+            </tr>
+            <tr id="abs"></tr>
+        </table>
+        <h2>Abs Workouts</h2>
+        <table>
+            <tr>
+                <td><b>Crunches</b></td>
+                <td class="detail">Crunches target the rectus abdominis. Lie on your back with your knees bent and lift your upper body towards your knees.</td>
+            </tr>
+            <tr>
+                <td><b>Planks</b></td>
+                <td class="detail">Planks target the core muscles, including the abs and lower back. Hold a push-up position with your body straight and supported by your elbows and toes.</td>
+            </tr>
+        </table>
+    </div>
+    <div class="topnav">
+        <div class="logo">
+            <img src="assets/dumbbell.png">
+            <a href="index.html">WeLoveGainz</a>
+        </div>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="workoutLibrary.html">Library</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="progresstracker.html">Progress</a></li>
+            <li><a href="challenges.html">Challenges</a></li>
+            <li><a href="forumPosts.html">Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -34,7 +34,6 @@ li {
 
 
 *{
-   
     padding: auto;
     margin: 0;
     box-sizing: border-box;
@@ -45,6 +44,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #b73c3c;
 }
 
 .logo{

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>We Love Gainz | Group4</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<style>
+    .page {
+        display: none;
+    }
+
+    .page.active {
+        display: block;
+    }
+
+    li {
+        display: inline;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    body {
+        background-color: #b73c3c;
+        background-image: url("assets/home.jpg");
+        background-size: cover;
+    }
+
+    .container {
+        width: 50%;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #FF0000;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #FF4343;
+    }
+    input[type="button"] {
+	background-color: #FF0000;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+   }
+   input[type="button"]:hover {
+	background-color: #FF4343;
+   }
+
+    #latestInputs {
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>
+
+<body>
+<div class="topnav">
+    <div class="logo">
+        <img src="assets/dumbbell.png">
+        <a href="index.html">WeLoveGainz</a>
+    </div>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="registration.html">Register</a></li>
+        <li><a href="workoutLibrary.html">Library</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="progresstracker.html">Progress</a></li>
+        <li><a href="challenges.html">Challenges</a></li>
+        <li><a href="forumPosts.html">Community</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <h2 class="headone">Weight Loss and Weight Lifted Tracker</h2>
+    <form id="trackerForm">
+        <label for="weightLoss">Current Weight(lbs):</label>
+        <input type="number" id="weightLoss" name="weightLoss" min="0">
+        <br>
+        <label for="weightLifted">Weight Lifted (lbs):</label>
+        <input type="number" id="weightLifted" name="weightLifted" min="0">
+        <br>
+        <label for="weightLossGoal">Weight Loss Goal (lbs):</label>
+        <input type="number" id="weightLossGoal" name="weightLossGoal" min="0">
+        <br>
+        <label for="weightLiftedGoal">Weight Lifted Goal (lbs):</label>
+        <input type="number" id="weightLiftedGoal" name="weightLiftedGoal" min="0">
+        <br>
+        <input type="submit" value="Submit">
+        <input type="button" id="clear" value="Clear">
+    </form>
+    <div id="latestInputs"></div>
+</div>
+
+<script>
+    document.getElementById('trackerForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var weightLoss = document.getElementById('weightLoss').value;
+        var weightLifted = document.getElementById('weightLifted').value;
+        var weightLossGoal = document.getElementById('weightLossGoal').value;
+        var weightLiftedGoal = document.getElementById('weightLiftedGoal').value;
+
+        var currentDate = new Date();
+        var formattedDate = currentDate.toISOString().slice(0, 19).replace('T', ' ');
+
+        var data = {
+            date: formattedDate,
+            weightLoss: weightLoss,
+            weightLifted: weightLifted,
+            weightLossGoal: weightLossGoal,
+            weightLiftedGoal: weightLiftedGoal
+        };
+
+        var existingData = JSON.parse(localStorage.getItem('latest_inputs')) || [];
+        existingData.push(data);
+        localStorage.setItem('latest_inputs', JSON.stringify(existingData));
+
+        displayLatestInputs();
+    });
+
+    function displayLatestInputs() {
+        var latestInputs = JSON.parse(localStorage.getItem('latest_inputs'));
+        var latestInputsDiv = document.getElementById('latestInputs');
+        latestInputsDiv.innerHTML = '<h3>Latest Inputs</h3>';
+        latestInputs.forEach(function(input) {
+            latestInputsDiv.innerHTML += '<p>Date: ' + input.date + ', Weight Loss: ' + input.weightLoss + ' lbs, Weight Lifted: ' + input.weightLifted + ' lbs</p>';
+            latestInputsDiv.innerHTML += '<p>Current Weight: ' + input.weightLossGoal + ' lbs, Weight Lifted Goal: ' + input.weightLiftedGoal + ' lbs</p>';
+        });
+    }
+
+    document.getElementById('clear').addEventListener('click', function () {
+        localStorage.removeItem('latest_inputs');
+        displayLatestInputs();
+    });
+
+    displayLatestInputs();
+</script>
+</body>
+</html>
+
