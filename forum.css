@@ -4,7 +4,7 @@ body{
     display: flex;
     align-items:normal; 
     justify-content: flex-start;
-    background-color:#7e0a0a;
+    background-color:#b73c3c;
 }
 
 .container{
@@ -55,14 +55,28 @@ body{
     margin-bottom: 75px;
 }
 
+/* Some styling for typing areas */
 .comment-area textarea{
     width:100%;
-    min-height: 100px;
     padding:10px;
+    max-width: 100%;
+    min-width: 50%;
 }
 
-/* Figure out how to fix cursor issues */
-.comment-area input{
+/* Height for their comments */
+.typeComment {  
+    min-height: 100px;
+}
+
+/* formatting for username input */
+.usernameInput{
+    height:10px;
+    margin-bottom: 10px;
+    min-height: 45px;
+    max-height: 45px;
+}
+
+.comment-area .submitButton{
     float:right;
     padding:10px;
     border-radius: 10px;
@@ -110,4 +124,9 @@ body{
 
 .comments-container .body .authors .username{
     padding-top: 5px;
+}
+
+.addAComment{
+    font-weight: lighter;
+    color:#000;
 }
