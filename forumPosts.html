@@ -1,147 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 
-    <head>
-        <!-- This page was modeled after this
+
+    <!-- This page was modeled after this
         https://www.youtube.com/watch?v=knGk9aUr4Do
         forum tutorial-->
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="navbar.css" >
-        <link rel="stylesheet" href="forum.css" >
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-        <div class="topnav">
-            <div class="logo">
-                <img src="assets/dumbbell.png">
-                <a href="index.html">WeLoveGainz</a>
-            </div>
-            <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="registration.html">Register</a></li>
-                <li><a href="workoutLibrary.html">Library</a></li>
-                <li><a href="nutrition.html">Nutrition</a></li>
-                <li><a href="progresstracker.html">Progress</a></li>
-                <li><a href="challenges.html">Challenges</a></li>
-                <li><a href="forumPosts.html">Community</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="navbar.css" >
+    <link rel="stylesheet" href="forum.css" >
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Forum</title>
+
+
+    <div class="topnav">
+        <div class="logo">
+            <img src="assets/dumbbell.png">
+            <a href="index.html">WeLoveGainz</a>
         </div>
-        <title>Post | We Love Gainz</title>
-        <!-- Add background photo (maybe. The forum might look better w/out it) -->
-    </head>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="workoutLibrary.html">Library</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="progresstracker.html">Progress</a></li>
+            <li><a href="challenges.html">Challenges</a></li>
+            <li><a href="forumPosts.html">Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 
-    <body>
+    <!-- Link to forum.js to make submit button work -->
+    <script type = "text/javascript" src="forum.js"></script>
 
-        <div class="container">
+</head>
 
-            <!-- Forum topic title: -->
-            <div class="postTitle">
-                <h1 class="headone">We Love Gainz Forum</h1>
-            </div>
+<!-- Main forum -->
+<body>
 
-            <div class="topic-container">
-                
-                <!-- Dividing line before posts -->
-                <div class="blackBar"></div>
+    <!-- Big container -->
+    <div class="container">
 
-                <div class="body">
-                    <div class="authors">
-                        <div class="username">Username</div>
-                        
-                    </div>
-                    
-                    <div class="content">
-                        This is the content of the post. It can have multiple paragraphs.
-                        <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    
-                        <div class="comment">
-                            <button onclick="showComment()">Reply</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Add comments
-            Code to make it appaer/disappear doesn't work yet -->
-            <div class="comment-area hide" id=""comment-area>
-                <textarea name="comment" id="" placeholder="Type your comment here"></textarea>
-                <input type="submit" name="submit" id="" value="Submit">
-            </div>
-
-            <!-- Comments Section -->
-            <div class="comments-container">
-                <div class="body">
-                    <div class="authors">
-                        <!-- Push this down so it's not parallel with the submit button -->
-                        <div class="username">AnotherUser</div>
-                        
-                    </div>
-                    <div class="content">
-                        Someone has a reply to the above topic. 
-                        It is quite long and lengthy, 
-                        thus pushing this textobx to another line.
-
-                        <!-- Comment a respone button.
-                        Something  is up with the box causing the mouse pointer to act strange. -->
-                        <div class="comment">
-                            <button onclick="showReply()">Reply</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Reply Area
-            Should disappear upon submission but doesn't...
-            May also want to add popup stating comment added to bottom -->
-            <div class="comment-area hide" id="reply-area">
-                <textarea name="reply" id="" placeholder="Type your comment here"></textarea>
-                <input type="submit" value="Submit">
-            </div>
-    
-    
-            <!--Another Post-->
-            <div class="comments-container">
-                <div class="body">
-                    <div class="authors">
-                        <div class="username">ThirdUser</div>
-                        
-                    </div>
-                    <div class="content">
-                        Yet another person says something in response.
-
-                        <!-- Comment a respone button.
-                        Something  is up with the box causing the mouse pointer to act strange. -->
-                        <div class="comment">
-                            <button onclick="showReply()">Reply</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Reply Area
-            Should disappear upon submission but doesn't...
-            May also want to add popup stating comment added to bottom -->
-            <div class="comment-area hide" id="reply-area">
-                <textarea name="reply" id="" placeholder="Type your comment here"></textarea>
-                <input type="submit" value="Submit">
-            </div>
-    
-            
-    
+        <!-- Forum topic title: -->
+        <div class="postTitle">
+            <h1 class="headone">We Love Gainz Forum</h1>
         </div>
 
-            
+
+        <div class="topic-container">
+           
+            <!-- Dividing line before posts -->
+            <div class="blackBar"></div>
+
+
+        <!--Reply Area -->
+        <div class="comment-area hide" id="reply-area">
+            <h2 class="addAComment">Add a comment:</h2>
+           
+            <!-- forms to get username and comment: -->
+            <form class="typeComments">
+               
+                <!-- Get username -->
+                <textarea id="usernameInput" class="usernameInput" name="inputUser"
+                    required="required" placeholder="Username" type="text">
+                </textarea>
+
+
+                <!-- Get text -->
+                <textarea id="typeComment" class="typeComment" name="reply" id="typeComment"
+                    required="required" placeholder="Type your comment here">
+                </textarea>
+                <button class="submitButton" type="submit" onclick="printAtTarget(); return false;">Submit</button>
+            </form>
+           
+        <!-- Comments -->
         </div>
 
-        <!-- Javascript file -->
-        <script scr="forum.js"></script>
+            <div class="body">
+                <div class="authors"> <!-- Username -->
+                    <div class="username">CS32301</div>
+                   
+                </div>
+               
+                <!-- Comment -->
+                <div class="content">
+                    What's everyone's favorite workout?
+                    I personally like swimming laps.
+                    It can be relatively low-intensity, but still a great workout.
+               
+                </div>
+            </div>
+        </div>
 
-    </body>
 
-  
+        <!-- More posts: -->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <!-- Push this down so it's not parallel with the submit button -->
+                    <div class="username">TheGreatGroupFour</div>
+                   
+                </div>
+                <div class="content">
+                    I really like any workout led by Giovanni.
+                    Overall he makes it very fun and enjoyable 
+                    and he is a relaxed guy who wants his students to do well. 
+                    The class is fairly easy and he is a pretty lenient grader. 
+                    He can be funny and does a good job with explaining class topics. 
+                    The only thing keeping me from giving him a 5 is 
+                    he takes attendance and gets annoyed when students do not show up.
+                   
+                </div>
+            </div>
+        </div>
+
+
+        <!-- A third post -->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username">CS32301</div>
+                   
+                </div>
+                <div class="content">
+                    What do you mean, "The only thing keeping me from giving him a 5 is 
+                    he takes attendance?"
+                    It's an exercise website; of course there's going to be attendance!
+
+                </div>
+            </div>                
+        </div>
+
+
+        <!-- Enter user's post! -->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <!-- It really doesn't like me putting text here... -->
+                    <div class="username">
+                        <!-- Username input goes here -->
+                        <p id="usernameTarget"></p>
+                    </div>
+                   
+                </div>
+                <div class="content">
+                    <!-- Text input goes here -->
+                    <p id="target"></p>
+                   
+                </div>
+            </div>
+        </div>
+
+
+    <!-- End big container -->
+    </div>
+
+    </div>
+
+</body>
+
 </html>

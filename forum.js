@@ -1,26 +1,11 @@
-//NavBar
-function hideIconBar(){
-    var iconBar = document.getElementById("iconBar");
-    var navigation = document.getElementById("navigation");
-    iconBar.setAttribute("style", "display:none;");
-    navigation.classList.remove("hide");
+function printAtTarget(){
+    document.getElementById("target").innerHTML
+        = document.getElementById("typeComment").value;
+   
+    document.getElementById("usernameTarget").innerHTML
+        = document.getElementById("usernameInput").value; 
+    
+    alert("Your comment has been added to the bottom!");
 }
 
-/*function showIconBar(){
-    var iconBar = document.getElementById("iconBar");
-    var navigation = document.getElementById("navigation");
-    iconBar.setAttribute("style", "display:block;");
-    navigation.classList.add("hide");
-}*/
-
-//Comment
-function showComment(){ /* Should show reply text box */
-    var commentArea = document.getElementById("comment-area");
-    commentArea.classList.remove("hide");
-}
-
-//Reply
-function showReply(){ /* Should hide reply text box */
-    var replyArea = document.getElementById("reply-area");
-    replyArea.classList.remove("hide");
-}
+ 
