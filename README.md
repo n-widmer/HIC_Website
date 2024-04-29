@@ -45,10 +45,15 @@ Contributions to the project are welcome! Feel free to fork the repository, make
 ## Authors:
 
 Nick Widmer - Team Leader
+
 Caitlyn Hartmann - Team Member/Assitant manager
+
 Sage Hardiman - Team Member
+
 Brandon Robare - Team Member
+
 Keegan Knapp - Team Member
+
 
 ## Contact:
 For inquiries or feedback, please contact [nwidmer@kent.edu].
