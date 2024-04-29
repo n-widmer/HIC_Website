@@ -16,7 +16,7 @@ Progress Tracking: Allows users to track their fitness progress, set goals, and 
 Community: Enables users to engage with each other, share experiences, and support one another on their fitness journey.
 
 Architecture:
-The project follows a typical web development architecture, comprising both front-end and back-end components. The front-end is built using HTML, CSS, and JavaScript, while the back-end utilizes server-side technologies such as supabase.js and Google Apps Script. D
+The project follows a typical web development architecture, comprising both front-end and back-end components. The front-end is built using HTML, CSS, and JavaScript, while the back-end utilizes server-side technologies such as supabase.js and Google Apps Script.
 
 ## Installation:
 
@@ -30,7 +30,7 @@ Install extensions: "Live Server"
 
 Once installed, make sure you are currently viewing the "index.html" file. Locate the "Go Live" button on the bottom right of VS code and press it.
 
-Usage:
+## Usage:
 
 Access the website using "Live Server" extension.
 
